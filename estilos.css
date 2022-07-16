@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #424242;
+}
+
+img {
+    width: 100%;
+}
+
+/*-----PÁGINA INDEX----*/
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 2px solid #706F6F; 
+    margin-top: 20px;
+}
+
+
+
+.menu{
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+    font-size: 22px;
+    
+}
+
+.menu a:hover{
+    color: #189ED3;
+}
+
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;  
+}
+
+.box__img img{
+    display: flex;
+    width: 650px;
+    height: 550px;
+    object-fit: cover;
+    
+}
+
+.box__info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+.box__h1{
+    font-size: 28px;
+}
+
+.box__p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.box__pdos{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.box__boton{
+    width: 150px;
+    text-align: center;
+    background-color: #189ED3;
+    border-radius: 100px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 18px; 
+}
+
+.box__boton:hover {
+    font-weight: 700;
+    background-color: #106e94;
+}
+
+.boxdos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    height: 220px;
+    background-color: #f4f4f4;
+
+}
+.boxdos__info{
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.boxdos__h2 {
+    padding-bottom: 20px;
+}
+
+.boxdos__formulario {
+    margin-bottom: 20px;
+    
+}
+
+.boxdos__cajaform{
+    flex-wrap: wrap;
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    margin-right: 2rem;
+    font-size: 16px;
+}
+
+.boxdos__formulario a{
+    background-color: #706F6F;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.boxdos__formulario a:hover{
+    background-color: #424242;
+    font-weight: 700;
+}
+
+.boxtres{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    height: 600px;
+    padding-top: 50px;
+
+}
+
+.boxtres__img img{
+    margin-top: 70px;
+    width: 355px;
+    height: 405px;
+    
+}
+
+.boxtres__info {
+    width: 30%;
+}
+
+.boxtres__h2{
+    padding-bottom: 20px;
+
+}
+
+.boxtres__p{
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.boxtres__boton{
+    background-color: #189ED3;
+    border-radius: 100px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.boxtres__boton:hover {
+    background-color: #106e94;
+    font-weight: 700;
+}
+
+.boxcuarto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 220px;
+    background-color: #f4f4f4;
+
+}
+.boxcuarto__info{
+    width: 70%;
+    text-align: center;
+    
+}
+
+.boxcuarto__h2 {
+    padding-bottom: 20px;
+}
+
+.boxcuarto__p{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.boxcuarto__link{
+    color: #189ED3;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.boxcuarto__link:hover {
+    color: #106e94;
+    font-weight: 800;
+}
+
+.boxcardstex{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    width: 90%;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: auto;
+    
+}
+
+.boxcards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.boxcards__info {
+    width: 436px;
+}
+
+
+.boxcards__img img{
+    display: flex;
+    width: 436px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    background-color: #424242;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer__logo{
+    justify-content: flex-end;
+}
+
+.footer__info{
+    color: #FFFFFF;
+    width: 25%;
+    justify-content: flex-start;
+    padding-top: 20px;
+    
+}
+
+.footer__info h3{
+    color: #FFFFFF;
+    
+    
+}
+
+.footer__info p{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footer__contacto{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    color: #f4f4f4;
+   
+}
+
+.footer__contacto h3{
+    padding-top: 20px;
+}
+
+.footer__rs h3{
+    color: #FFFFFF;
+    padding-top: 20px;
+
+}
+
+.footer__listars{
+    display: flex;
+    width: 200px;
+    gap: 2rem;
+    margin-right: 5%;
+    padding-top: 5px;
+
+}
+
+@media screen and (max-width: 879px) {
+
+    .menu{
+        font-size: 18px;
+    }
+
+    .box__info{
+        width: 80%;
+    }
+
+     .boxdos{
+        height: 320px;
+     }
+
+    .boxdos__cajaform{
+        margin-bottom: 20px;
+    }
+
+    .boxtres__info{
+        width: 45%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .footer__contacto{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__img{
+        padding-bottom: 10px;
+
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        gap: 1rem;
+    }
+    .box__img img{
+        width: 100%;
+        
+    }
+    .boxdos{
+        height: 380px;
+     }
+
+    .boxdos__cajaform{
+        margin-bottom: 20px;
+    }
+
+    .box__info{
+        width: 80%;
+        align-items: center;
+    }
+
+    .box__h1{
+        text-align: center;
+    }
+
+    .box__p{
+        text-align: center;
+    }
+
+    .boxtres__info{
+        display: flex;
+        width: 85%;
+        text-align: center;
+        flex-direction: column;
+
+}
+    .boxtres__boton{
+        
+        margin-left: 30%;
+        margin-right: 30%;
+        
+    }
+
+    .boxcuarto{
+        height: 300px;
+        margin-top: 400px;
+}
+}
+
+@media screen and (max-width: 480px) {
+
+    .boxtres{
+        padding-top: 10px;
+    }
+
+
+}
+/*--------------------------------------------- SECCIÓN PROMOS-----------------------------------------*/
+
+.promosbox{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.promosbox__img img{
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    
+    
+}
+.promosbox__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    
+   
+}
+.promosbox__info h1{
+    color: #189ED3;
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 20px;
+   
+}
+
+.promosbox__info p{
+    font-size: 20px;
+   
+}
+
+.promosboxdos {
+    flex-wrap:wrap ;
+    align-items: center;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: auto;
+    
+}
+
+.promosboxdos__img img{
+    width: 600px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.promosboxdos__info h2{
+    color: #189ED3;
+    padding-bottom: 10px;
+}
+
+.promosboxdos__info h2:hover{
+    color: #106e94;
+}
+
+@media screen and (max-width: 879px) {
+
+    .promosbox{
+        
+    justify-content: center;
+    }
+
+    .promosbox__img img {
+        width: 100%;
+        
+    }
+
+    .promosbox__info{
+        width: 80%;
+        
+    }
+
+    .promosboxdos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .promosboxdos__img img{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 575px) {
+    
+    .promosbox__img img {
+        width: 100%;
+        
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    
+
+
+}
