@@ -2,90 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="./img/logo letra negra-03 - copia.png">
+        rel="stylesheet" />
+    <link rel="icon" href="./img/logo letra negra-03 - copia.png" />
+    <script src="https://kit.fontawesome.com/7da51e6fb0.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="estilos.css" />
+
     <title>Vuela Barato Colombia</title>
 </head>
 
 <body>
     <!--inicio header-->
-    <header class="flexheader">
-        <picture class="header__logo">
-            <img class="header__img" src="./img/logo letra negra-03.png" alt="logo vuela bara colombia">
-        </picture>
-        <nav class="navegación">
-            <ul class="menu">
+    <header class="container-fluid background">
+        <div class="row py-3 mx-5">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 img">
+                <picture class="header__logo">
+                    <img class="header__img" src="./img/logo letra negra-03.png" alt="logo vuela bara colombia" />
+                </picture>
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 ">
+                <nav >
+                    <ul class="d-flex justify-content-end mt-4 gap-3 text menu">
+                        <li>
+                            <a class="menu__link" href="./index.html">Inicio</a>
+                        </li>
 
-                <li class="menu__item"><a class="menu__link" href="./index.html">Inicio</a></li>
-                
-                <li class="menu__item"><a class="menu__link" href="./pages/promo.html">Promos</a></li>
-                
-
-            </ul>
-        </nav>
+                        <li>
+                            <a class="menu__link" href="./pages/promo.html">Promos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <!--fin header-->
-    <main class="container">
+    <main>
         <section id="imgppal" class="imgppal">
             <article class="box">
                 <div class="box__info">
-                    <h1 class="box__h1">Aquí puedes encontrar tips, promociones, tutoriales y asesoria para que tus
-                        viajes por el mundo sea perfecto</h1>
-                    <p class="box__p">Este es tu blog de viajes por Colombia. Una recopilación de relatos, guías y
-                        artículos prácticos sobre mis viajes
-                        por los mejores rincones colombianos.</p>
-                    <p class="box__pdos"> ¡Los mejores viajes de mi vida!</p>
+                    <h1 class="box__h1">
+                        Aquí puedes encontrar tips, promociones, tutoriales y asesoria
+                        para que tus viajes por el mundo sea perfecto
+                    </h1>
+                    <p class="box__p">
+                        Este es tu blog de viajes por Colombia. Una recopilación de
+                        relatos, guías y artículos prácticos sobre mis viajes por los
+                        mejores rincones colombianos.
+                    </p>
+                    <p class="box__pdos">¡Los mejores viajes de mi vida!</p>
                     <a class="box__boton" href="https://vuelabarato.com.co/">Conoce más</a>
                 </div>
                 <picture class="box__img">
-                    <img src="./img/providenciacolombia.jpg" alt="viajes por colombia">
+                    <img src="./img/providenciacolombia.jpg" alt="viajes por colombia" />
                 </picture>
-
             </article>
         </section>
-        <section id="dos" class="dos">
-            <article class="boxdos">
-                <div class="boxdos__info">
-                    <h2 class="boxdos__h2">Te mantenemos al tanto de relatos, recomendaciones y promociones que se estan
-                        actualizando constantemente
-                        en el sitio web, suscribete y no te pierdas nada</h2>
-                    <p class="boxdos__p">Mensualmente recibieras novedades sobre nuestras aventuras y promociones</p>
+        <section id="dos" class="container-fluid dos">
+            <article class="row mt-5 width">
+                <div class="col-12 text-center mt-5">
+                    <h2 class="boxdos__h2">
+                        Te mantenemos al tanto de relatos, recomendaciones y promociones
+                        que se estan actualizando constantemente en el sitio web,
+                        suscribete y no te pierdas nada
+                    </h2>
+                    <p class="boxdos__p">
+                        Mensualmente recibieras novedades sobre nuestras aventuras y
+                        promociones
+                    </p>
                 </div>
-                <div class="boxdos__formulario">
-
-                    <form action="susbribete">
-                        <label for="correo"></label>
-                        <input type="email" name="correo" id="correo" placeholder="Email" class="boxdos__cajaform"
-                            required>
-                        <a href="https://vuelabarato.com.co/">Suscríbete</a>
-                    </form>
-
-                </div>
+                <form class="row g-2 form">
+                    <div class="col-xs-12">
+                      <label for="email2" class="visually-hidden">Email</label>
+                      <input type="correo" class="form-control" id="email2" placeholder="Email">
+                    </div>
+                    <div class="col-xs-12 cel">
+                      <button type="submit" class="btn btn-outline-secondary mb-3">Suscribete</button>
+                    </div>
+                  </form>
             </article>
         </section>
         <section id="tres" class="tres">
             <article class="boxtres">
                 <picture class="boxtres__img">
-                    <img src="./img/lifemiles.png" alt="promocion lifemiles">
+                    <img src="./img/lifemiles.png" alt="promocion lifemiles" />
                 </picture>
                 <div class="boxtres__info">
-                    <h2 class="boxtres__h2">Ya es posible convertir tus Puntos Colombia en Lifemiles</h2>
-                    <p class="boxtres__p">Hace un tiempo compartimos con ustedes la nueva alianza entre Puntos Colombia
-                        y Lifemiles, lo que
-                        permitia usar tus puntos colombia como parte de pago en las redenciones de vuelos en
-                        Lifemiles.com. Ahora, es posible convertir tus Puntos Colombia directamente a Lifemiles, ven y
-                        te contamos como. Desde el 29 de abril ya es posible usar tus Puntos Colombia para convertirlos
-                        en LifeMiles, el programa de viajero frecuente de Avianca y ademas de esto, llegaron con una
-                        oferta de lanzamiento. ¡Gana 10% extra de LifeMiles! por tu primera conversión entre el 29 de
-                        abril y 17 de mayo del 2020.</p>
+                    <h2 class="boxtres__h2">
+                        Ya es posible convertir tus Puntos Colombia en Lifemiles
+                    </h2>
+                    <p class="boxtres__p">
+                        Hace un tiempo compartimos con ustedes la nueva alianza entre
+                        Puntos Colombia y Lifemiles, lo que permitia usar tus puntos
+                        colombia como parte de pago en las redenciones de vuelos en
+                        Lifemiles.com. Ahora, es posible convertir tus Puntos Colombia
+                        directamente a Lifemiles, ven y te contamos como. Desde el 29 de
+                        abril ya es posible usar tus Puntos Colombia para convertirlos en
+                        LifeMiles, el programa de viajero frecuente de Avianca y ademas de
+                        esto, llegaron con una oferta de lanzamiento. ¡Gana 10% extra de
+                        LifeMiles! por tu primera conversión entre el 29 de abril y 17 de
+                        mayo del 2020.
+                    </p>
 
                     <a class="boxtres__boton" href="https://vuelabarato.com.co/">Leer más</a>
                 </div>
@@ -94,10 +119,14 @@
         <section id="cuarto" class="cuarto">
             <article class="boxcuarto">
                 <div class="boxcuarto__info">
-                    <h2 class="boxcuarto__h2">VIAJA TRANQUILO Y ASEGURADO POR COLOMBIA</h2>
-                    <p class="boxcuarto__p">Pase lo que pase que no te pille sin seguro. Hace años que viajo asegurada
-                        con Iati porque tiene
-                        las mejores coberturas en viaje, anulación y precios muy económicos para Colombia.</p>
+                    <h2 class="boxcuarto__h2">
+                        VIAJA TRANQUILO Y ASEGURADO POR COLOMBIA
+                    </h2>
+                    <p class="boxcuarto__p">
+                        Pase lo que pase que no te pille sin seguro. Hace años que viajo
+                        asegurada con Iati porque tiene las mejores coberturas en viaje,
+                        anulación y precios muy económicos para Colombia.
+                    </p>
 
                     <a class="boxcuarto__link" href="https://www.iatiseguros.com/?r=12074670366530">Haz click aqí para
                         más info y llevate un 5% de descuento</a>
@@ -109,45 +138,32 @@
             <h2>Recientemente en el Blog</h2>
         </article>
 
-        <section id="cards" class="cards">
-
-            <article class="boxcards">
-
-                <picture class="boxcards__img">
-                    <img src="./img/laguna-cacique-guatavita-colombia.jpg" alt="Laguna cacique guatavita">
-                </picture>
-
-                <div class="boxcards__info">
-                    <h2>Conoce nuestra aventura en este hermoso lugar</h2>
-                </div>
+        <section id="cards" class="container-fluid mt-5">
+            <article class="row g-4 justify-content-evenly">
+                <div class="card" style="width: 22rem;">
+                    <img src="./img/laguna-cacique-guatavita-colombia.jpg" class="card-img-top" alt="Laguna guatavita">
+                    <div class="card-body">
+                      <p class="card-text">Conoce nuestra aventura en este hermoso lugar.</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 22rem;">
+                    <img src="./img/medellin-colombia.jpg" class="card-img-top" alt="medellin-colombia">
+                    <div class="card-body">
+                      <p class="card-text">Una ciudad hermosa llena de encanto y gente amable.</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 22rem;">
+                    <img src="./img/desierto-de-la-tatacoa-colombia.jpg" class="card-img-top" alt="Desierto de la tatacoa">
+                    <div class="card-body">
+                      <p class="card-text">Un lugar que tienes que visitar cuando viajes por Colombia.</p>
+                    </div>
+                  </div>
             </article>
-
-            <article class="boxcards">
-                <picture class="boxcards__img">
-                    <img src="./img/medellin-colombia.jpg" alt=" Medellin-Colombia">
-                </picture>
-
-                <div class="boxcards__info">
-                    <h2>Una ciudad hermosa llena de encanto y gente amable</h2>
-                </div>
-            </article>
-            <article class="boxcards">
-
-                <picture class="boxcards__img">
-                    <img src="./img/desierto-de-la-tatacoa-colombia.jpg" alt="Desierto de la tatacoa">
-                </picture>
-
-                <div class="boxcards__info">
-                    <h2>Un lugar que tienes que visitar cuando viajes por colombia</h2>
-                </div>
-
-            </article>
-
         </section>
         <footer class="footer">
             <div class="footer__logo">
                 <picture class="footer__img">
-                    <img src="./img/logo letra negra-03 - copia.png" alt="logo">
+                    <img src="./img/logo letra negra-03 - copia.png" alt="logo" />
                 </picture>
             </div>
             <div class="footer__info">
@@ -165,16 +181,18 @@
             <div class="footer__rs">
                 <h3>Redes Sociales</h3>
                 <ul class="footer__listars">
-                    <li><img src="./img/facebook.png" alt=""></li>
-                    <li><img src="./img/instagram.png" alt=""></li>
-                    <li><img src="./img/signo-de-twitter.png" alt=""></li>
+                    <li><img src="./img/facebook.png" alt="" /></li>
+                    <li><img src="./img/instagram.png" alt="" /></li>
+                    <li><img src="./img/signo-de-twitter.png" alt="" /></li>
                 </ul>
             </div>
         </footer>
     </main>
 
-
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
