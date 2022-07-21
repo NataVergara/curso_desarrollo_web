@@ -103,7 +103,7 @@ img {
 
 .dos {
     background-color: #f4f4f4;
-    height: 250px;
+    height: 300px;
 }
 
 .boxdos__h2 {
@@ -274,7 +274,7 @@ img {
 
 @media screen and (max-width: 879px) {
 
-    .boxdos {
+    .dos {
         height: 320px;
     }
 
@@ -327,7 +327,7 @@ img {
     }
 
     .dos {
-        height: 400px;
+        height: 450px;
     }
 
 
