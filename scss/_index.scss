@@ -1,0 +1,203 @@
+
+// estilos index
+
+
+
+main // Seccion uno
+
+    {
+    .box {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+
+    
+
+        &__img img {
+            display: flex;
+            width: 650px;
+            height: 550px;
+            object-fit: cover;
+
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            flex-wrap: wrap;
+            animation-duration: 4s;
+            animation-name: aparecer;
+            animation-iteration-count: initial;
+
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+
+            }
+
+        }
+
+        &__h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        &__p {
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        &__pdos {
+            padding-top: 20px;
+            padding-bottom: 40px;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+    }
+
+    .botonppal {
+        width: 150px;
+        font-size: 18px;
+
+    }
+
+    // Seccion dos
+
+    .boxdos {
+        background-color: #f4f4f4;
+        height: 300px;
+
+
+        &__h2 {
+            font-weight: 700;
+            font-size: 24px;
+
+        }
+
+        &__width {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: auto;
+        }
+
+    }
+
+    // Seccion tres
+
+    .boxtres {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        height: 600px;
+        padding-top: 50px;
+
+        &__img img {
+            margin-top: 70px;
+            width: 355px;
+            height: 405px;
+
+        }
+
+        &__info {
+            width: 30%;
+        }
+
+        &__h2 {
+            padding-bottom: 20px;
+            font-size: 24px;
+            font-weight: 700;
+
+        }
+
+        &__p {
+            font-size: 18px;
+            padding-bottom: 10px;
+
+        }
+
+        &__boton {
+            font-size: 18px;
+
+
+        }
+
+    }
+
+    // Seccion cuatro
+
+    .boxcuarto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 250px;
+        background-color: #f4f4f4;
+
+        &__info {
+            width: 70%;
+            text-align: center;
+
+        }
+
+        &__h2 {
+            padding-bottom: 20px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__p {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+
+        &__link {
+            color: #189ED3;
+            font-weight: 500;
+            font-size: 20px;
+
+            &:hover {
+                color: #106e94;
+                font-weight: 800;
+            }
+        }
+    }
+
+    // Seccion quinta
+
+    .boxcardstex {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .card:hover {
+        transition: all 1s;
+        transform: scale(1.1);
+
+    }
+
+    .card-text {
+        font-weight: 600;
+        color: #189ED3;
+    }
+
+}
+
+
+    

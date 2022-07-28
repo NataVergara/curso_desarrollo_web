@@ -1,0 +1,57 @@
+// Estilos promos
+
+main {
+    .promosbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    &__img img {
+        width: 90%;
+        height: 500px;
+        object-fit: cover;
+
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 40%;
+        animation-duration: 4s;
+        animation-name: aparecerpromo;
+        animation-iteration-count: initial;
+
+        @keyframes aparecerpromo {
+            0% {opacity: 0;}
+            100%{opacity: 1;}
+    
+        }
+
+    }
+    &__info h1 {
+        color: #189ED3;
+        font-size: 28px;
+        font-weight: 700;
+        padding-bottom: 20px;
+
+    }
+    &__info p {
+        font-size: 20px;
+
+    }
+
+    }
+    .promosboxdos{
+        background-color: #f4f4f4;
+        .card-title{
+            font-size: 22px;
+            font-weight: 600;
+            color: #189ED3;
+        }
+    }
+    
+}

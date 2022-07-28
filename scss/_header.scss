@@ -1,0 +1,28 @@
+// estilos index
+
+.header {
+    background-color: #f4f4f4;
+    &__img {
+        height: 100px;
+        width: auto;
+        &:hover{
+            transition: all 1s;
+            transform: scale(1.1);
+    
+        }
+    }
+    .text {
+        font-size: 24px;
+        font-weight: 700;
+        
+    }
+    .menu__link:hover {
+        color: #189ED3;
+    }
+
+}
+   
+
+    
+
+
