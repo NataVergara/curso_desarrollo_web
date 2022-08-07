@@ -1,14 +1,32 @@
-/*Colores*/
-$primary: #189ed3;
-$secundario: #424242;
-$bg: #f4f4f4;
-$text-color:#000000;
-$text-hover:#106e94;
+/*Colores primarios*/
+$primario:#CE8F5A;
+$segundo:#EFD199;
+$tercero:#80C8BC;
+$cuarto:#5EC0CA;
+$quinto:#6287A2;
+
+/* Colores neutral */
+$text-color:#1D1D1D;
+$blanco:#FFFFFF;
+$background:#F4F4F4;
 
 /*font-family*/
-$font-principal: 'Raleway', sans-serif;
+$font-texto: 'Raleway', sans-serif;
+$font-titulo: 'Yanone Kaffeesatz', sans-serif;
 
 /*font-size*/
-$text-title:28px;
-$text-ppal:18px;
-$text-subtitle:24px;
+$text-body: 1.6em;
+$text-h1: 5em;
+$text-h2: 4.1em;
+$text-h3: 3.3em;
+$text-h4: 2.5em;
+$text-btn: 2em;
+
+/* margenes del sitio */
+
+$margin-left: 20.6em;
+$margin-right: 20.6em;
+
+/* espaciado entre secciones */
+
+$spacing: 8.4em;
