@@ -1,5 +1,199 @@
-
 // estilos index
 
+/* header */
+.header {
+  @include header(url("/img/home.png"), 704px);
+}
 
-    
+.btn {
+  color: $primero;
+  font-family: $font-titulo;
+  font-size: $text-btn;
+  border: 1px solid$primero;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: $primero;
+  color: $blanco;
+  border: solid$primero;
+}
+
+.galeria__box {
+  display: flex;
+  margin-top: -265px;
+}
+
+/* por qué visitar colombia */
+
+.visit {
+  margin-top: 8.4em;
+
+  &__slider {
+    width: 80%;
+    height: 650px;
+    position: relative;
+    margin-top: 2.5em;
+    margin-left: 10.6em;
+    margin-right: 10.6em;
+    &--h2 {
+      text-align: center;
+      font-family: $font-titulo;
+      font-size: $text-h2;
+    }
+  }
+
+  &__slider1 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    opacity: 1;
+    background-color: $blanco;
+    transition: opacity 0.5s;
+
+    &:target {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    &--h3 {
+      @include sliderh3;
+    }
+
+    &--p {
+      @include sliderp;
+    }
+  }
+
+  &__slider2 {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    gap: 20px;
+    left: 0px;
+    top: 100px;
+    opacity: 0;
+    background-color: $blanco;
+    transition: opacity 0.5s;
+
+    &:target {
+      opacity: 1;
+    }
+  }
+
+  &__slider3 {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    gap: 20px;
+    left: 0px;
+    top: 100px;
+    opacity: 0;
+    background-color: $blanco;
+    transition: opacity 0.5s;
+
+    &:target {
+      opacity: 1;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+
+    &--uno {
+      text-align: center;
+      padding: 15px;
+
+      a {
+        display: inline-block;
+        color: $primero;
+        text-decoration: none;
+        border: 2px solid$primero;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        font-family: $font-titulo;
+        font-size: $text-btn;
+        border-radius: 100%;
+
+        &:hover {
+          background-color: $primero;
+          color: $blanco;
+        }
+      }
+    }
+  }
+}
+
+/* servios */
+
+.servicios {
+  margin-top: 7em;
+
+  &__caja {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10.6em;
+    margin-right: 10.6em;
+
+    &--box1 {
+      width: 26.6%;
+      background-color: $segundo;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+
+      h2 {
+        @include boxh2;
+      }
+
+      p {
+        @include boxp;
+      }
+    }
+
+    &--box2 {
+      width: 26.6%;
+      background-color: $tercero;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+
+      h2 {
+        @include boxh2;
+      }
+
+      p {
+        @include boxp;
+      }
+    }
+
+    &--box3 {
+      width: 26.6%;
+      background-color: $cuarto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+
+      h2 {
+        @include boxh2;
+      }
+
+      p {
+        @include boxp;
+      }
+    }
+  }
+}

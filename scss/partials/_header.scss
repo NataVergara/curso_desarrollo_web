@@ -1,7 +1,196 @@
 // estilos header
+.header {
+  &__logo {
+    display: flex;
+    justify-content: center;
 
+    &--img {
+      margin-top: 50px;
+    }
+  }
+  &__nav {
+    &--lista {
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      margin-top: 23px;
+    }
 
+    &--item {
+      padding: 15px;
+      font-family: $font-titulo;
+      font-size: 2em;
+      text-transform: uppercase;
 
-    
+      .inicio {
+        @include nav;
+      }
 
+      .inicio:hover,
+      .inicio:focus {
+        color: $blanco;
+        outline: none;
+      }
 
+      .inicio:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: $primero;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: 0.3s;
+      }
+
+      .inicio:hover:before,
+      .inicio:focus:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+
+      .tuto {
+        @include nav;
+      }
+
+      .tuto:hover,
+      .tuto:focus {
+        color: $blanco;
+        outline: none;
+      }
+
+      .tuto:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: $segundo;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: 0.3s;
+      }
+
+      .tuto:hover:before,
+      .tuto:focus:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+
+      .tique {
+        @include nav;
+      }
+
+      .tique:hover,
+      .tique:focus {
+        color: $blanco;
+        outline: none;
+      }
+
+      .tique:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: $tercero;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: 0.3s;
+      }
+
+      .tique:hover:before,
+      .tique:focus:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+
+      .promo {
+        @include nav;
+      }
+
+      .promo:hover,
+      .promo:focus {
+        color: $blanco;
+        outline: none;
+      }
+
+      .promo:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: $cuarto;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: 0.3s;
+      }
+
+      .promo:hover:before,
+      .promo:focus:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+
+      .contact {
+        @include nav;
+      }
+
+      .contact:hover,
+      .contact:focus {
+        color: $blanco;
+        outline: none;
+      }
+
+      .contact:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: $quinto;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: 0.3s;
+      }
+
+      .contact:hover:before,
+      .contact:focus:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.textppal {
+  position: relative;
+  z-index: 2;
+  top: -350px;
+  text-align: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    &--h1 {
+      font-family: $font-titulo;
+      font-size: $text-h1;
+      color: $primero;
+    }
+    &--p {
+      font-size: $text-body;
+      color: $blanco;
+      width: 450px;
+    }
+  }
+}

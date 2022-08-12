@@ -31,48 +31,48 @@
   </head>
 
   <body>
-    <header>
-      <picture>
-        <img src="./img/Home.png" alt="Visita Colombia" />
+    <header class="header">
+      <picture class="header__logo">
+        <img class="header__logo--img" src="./img/logo.png" alt="Visita Colombia" />
       </picture>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/tutoriales.html">Tutoriales</a></li>
-          <li><a href="./pages/tiquetes.html">Tiquetes</a></li>
-          <li><a href="./pages/promociones.html">Promociones</a></li>
-          <li><a href="./pages/contacto.html">Contáctanos</a></li>
+      <nav class="header__nav">
+        <ul class="header__nav--lista">
+          <li class="header__nav--item"><a class="inicio" href="./index.html">Inicio</a></li>
+          <li class="header__nav--item"><a class="tuto" href="./pages/tutoriales.html">Tutoriales</a></li>
+          <li class="header__nav--item"><a class="tique" href="./pages/tiquetes.html">Tiquetes</a></li>
+          <li class="header__nav--item"><a class="promo" href="./pages/promociones.html">Promociones</a></li>
+          <li class="header__nav--item"><a class="contact" href="./pages/contacto.html">Contáctanos</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- texto encabezado -->
-      <section>
-        <article>
-          <h1>VIAJA POR COLOMBIA</h1>
-          <p>
+      <section class="textppal">
+        <article class="textppal__text">
+          <h1 class="textppal__text--h1">VIAJA POR COLOMBIA</h1>
+          <p class="textppal__text--p">
             Este es tu blog de viajes por Colombia. Una recopilación de relatos,
             guías y artículos prácticos sobre mis viajes por los mejores
             rincones colombianos.
           </p>
-          <button name="boton">Conoce más</button>
+          <a class="btn" href="https://www.colombia.co/">Conoce más</a>
         </article>
       </section>
       <!-- galeria -->
-      <section>
+      <section class="galeria">
         <article>
-          <div>
+          <div class="galeria__box">
             <picture>
-              <img src="./img/home1.png" alt="" />
+              <img src="./img/home3.png" alt="" />
             </picture>
             <picture>
               <img src="./img/home2.png" alt="" />
             </picture>
             <picture>
-              <img src="./img/home3.png" alt="" />
+              <img src="./img/home4.png" alt="" />
             </picture>
             <picture>
-              <img src="./img/home4.png" alt="" />
+              <img src="./img/home1.png" alt="" />
             </picture>
           </div>
         </article>
@@ -80,51 +80,106 @@
 
       <!-- por qué visitar colombia -->
 
-      <section>
+      <section class="visit">
         <article>
-          <h2>¿POR QUÉ VISITAR COLOMBIA?</h2>
-          <div>
-            <div>
-              <h3>
-                Diversidad y sensibilidad: el sello de la arquitectura y diseño
-                colombiano
-              </h3>
-              <p>
-                La diversidad y el respeto por el entorno son algunas de las
-                cualidades propias de la arquitectura y diseño colombiano. En
-                ciudades como Bucaramanga, Medellín, Ipiales, Cartagena, entre
-                otras, residen obras magníficas, premiadas y dignas de conocer.
-                <br />
-                Dicen expertos que la arquitectura y diseño colombiano es
-                tradicional y conservador, pues utiliza concreto, ladrillo,
-                entre otros materiales convencionales para su construcción. Sin
-                embargo, su valor radica en el respeto por el entorno y el
-                establecimiento de una fuerte relación con el paisaje, como lo
-                dice el arquitecto santandereano Francisco Jordán.
-                <br />
-                Es por esto que, dada la diversidad de obras, vale la pena
-                referir algunos de los atractivos de Colombia en términos de
-                arquitectura. El primer referente suele ser Bogotá, pero la
-                riqueza de la arquitectura y diseño colombiano está en todo su
-                territorio con obras patrimonio, contemporáneas, parques, entre
-                otros.
-              </p>
+          <div id="slider1" class="visit__slider">
+            <h2 class="visit__slider--h2">¿POR QUÉ VISITAR COLOMBIA?</h2>
+            <div class="visit__slider1">
+                <img src="./img/home5.png" alt="Iglesia las lajas" />
+              <div class="visit__text">
+                <h3 class="visit__text--h3">
+                  Diversidad y sensibilidad: el sello de la arquitectura y
+                  diseño colombiano
+                </h3>
+                <p class="visit__text--p">
+                  La diversidad y el respeto por el entorno son algunas de las
+                  cualidades propias de la arquitectura y diseño colombiano. En
+                  ciudades como Bucaramanga, Medellín, Ipiales, Cartagena, entre
+                  otras, residen obras magníficas, premiadas y dignas de
+                  conocer.
+                <br>
+                  Dicen expertos que la arquitectura y diseño colombiano es
+                  tradicional y conservador, pues utiliza concreto, ladrillo,
+                  entre otros materiales convencionales para su construcción.
+                  Sin embargo, su valor radica en el respeto por el entorno y el
+                  establecimiento de una fuerte relación con el paisaje, como lo
+                  dice el arquitecto santandereano Francisco Jordán.
+               
+                </p>
+              </div>
             </div>
-            <div>
-              <picture>
-                <img src="./img/home5.png" alt="" />
-              </picture>
+
+            <div id="slider2" class="visit__slider2">
+                <img src="./img/home6.png" alt="interculturalidad" />
+                <div class="visit__text">
+                <h3 class="visit__text--h3">
+                  Reconocer y celebrar la diversidad cultural de Colombia, la
+                  clave para la interculturalidad
+                </h3>
+                <p class="visit__text--p">
+                  El 12 de octubre, es una de las fechas para reconocer la
+                  diversidad y riqueza cultural en Colombia. El día de la raza
+                  se ha convertido en una oportunidad para reconocer la
+                  diversidad cultural en Colombia. Es una ocasión para
+                  comprender el significado de la pertenencia a una nación que
+                  es un crisol con distintas vertientes.
+               <br>
+                  Colombia se caracteriza por ser un país pluriétnico y
+                  multicultural. Aquí se mezclan y enriquecen las distintas
+                  culturas. Por ejemplo, la de los pueblos indígenas, las
+                  comunidades afrocolombianas, palenqueras y raizales, el pueblo
+                  Rrom, así como los campesinos.
+              
+                </p>
+                </div>
+              </div>
+               
+              <div id="slider3" class="visit__slider3">
+                <img src="./img/home7.png" alt="Seguridad en Colombia" />
+                <div class="visit__text">
+                <h3 class="visit__text--h3">¿Cómo están las condiciones de seguridad en Colombia?</h3>
+                <p class="visit__text--p">
+                  Cada vez más viajeros extranjeros se dejan conquistar por el
+                  encanto de los paisajes y las ciudades colombianas.
+                  Anteriormente el país era considerado como uno de los destinos
+                  más peligrosos para los turistas. Ahora, gracias a años de
+                  trabajo y la firma del acuerdo con las FARC, la superación del
+                  problema de narcotráfico que ocasionó numerosos atentados a
+                  inicios de la década de 1990 y la fuerte apuesta por el
+                  desarrollo del sector turístico. Las condiciones de seguridad
+                  en Colombia han cambiado. Según cifras del Ministerio de
+                  Comercio, Industria y Turismo, Colombia recibió 7,6% más
+                  visitantes extranjeros en 2018 en comparación con el año
+                  anterior. En total fueron más de 4.2 millones de turistas, una
+                  cifra récord para el sector que deja en evidencia cómo el
+                  mundo ha recuperado la confianza en el país como un destino
+                  turístico de talla internacional.
+                </p>
+              </div>
             </div>
+            </div>
+
+            <ul class="visit__menu">
+              <li class="visit__menu--uno">
+                <a href="#slider1">1</a>
+              </li>
+              <li class="visit__menu--uno">
+                <a href="#slider2">2</a>
+              </li>
+              <li class="visit__menu--uno">
+                <a href="#slider3">3</a>
+              </li>
+            </ul>
           </div>
         </article>
       </section>
 
       <!-- servicios -->
 
-      <section>
+      <section class="servicios">
         <article>
-          <div>
-            <div>
+          <div class="servicios__caja">
+            <div class="servicios__caja--box1">
               <picture>
                 <img src="./img/svg/tutoriales.svg" alt="tutoriales" />
               </picture>
@@ -133,19 +188,21 @@
                 Cómo encontrar hoteles baratos: método, truquillos y consejos
               </p>
             </div>
-            <div>
+            <div class="servicios__caja--box2 bg">
               <picture>
-                <img src="./img/svg/tutoriales.svg" alt="tutoriales" />
+                <img src="./img/svg/tiquetes.svg" alt="tiquetes" />
               </picture>
               <h2>TIQUETES</h2>
-              <p>Seis consejos para conseguir tiquetes de avión baratos</p>
+              <p >
+                Seis consejos para conseguir tiquetes de avión baratos
+              </p>
             </div>
-            <div>
+            <div class="servicios__caja--box3 bg">
               <picture>
-                <img src="./img/svg/tutoriales.svg" alt="tutoriales" />
+                <img src="./img/svg/promociones.svg" alt="promociones" />
               </picture>
               <h2>PROMOCIONES</h2>
-              <p>
+              <p >
                 Descubre las mejores promociones con las principales aerolineas
               </p>
             </div>
@@ -156,28 +213,30 @@
 
     <!-- footer -->
 
-    <footer>
-      <div>
-        <div>
+    <footer class="footer">
+      <div class="footer__box">
+        <div class="footer__box--fbox1">
           <picture>
             <img
-              src="./img/Logo vuelva barato-06.png"
+              src="./img/logofooter.png"
               alt="Logo vuelva barato colombia"
             />
           </picture>
-          <p>Descubre Colombia con nosotros y aprovecha muchas promociones</p>
+          <p class="p">
+            Descubre Colombia con nosotros y aprovecha muchas promociones
+          </p>
         </div>
-        <div>
+        <div class="footer__box--fbox2">
           <h3>MENÚ</h3>
           <ul>
-            <li><a href="./pages/tutoriales.html"></a></li>
-            <li><a href="./pages/tiquetes.html"></a></li>
-            <li><a href="./pages/promociones.html"></a></li>
-            <li><a href="./pages/contacto.html"></a></li>
+            <li><a href="./pages/tutoriales.html">Tutoriales</a></li>
+            <li><a href="./pages/tiquetes.html">Tiquetes</a></li>
+            <li><a href="./pages/promociones.html">Promociones</a></li>
+            <li><a href="./pages/contacto.html">Contáctanos</a></li>
           </ul>
         </div>
-        <div>
-          <h3>CONTACTO</h3>
+        <div class="footer__box--fbox3">
+          <h3 >CONTACTO</h3>
           <ul>
             <li>Dirección: Calle 32E # 52-70</li>
             <li>Celular: (+57) 3108300420</li>
@@ -185,20 +244,23 @@
             <li>Medellín - Colombia</li>
           </ul>
         </div>
-        <div>
+        <div class="footer__box--fbox4">
+          <h3>REDES SOCIALES</h3>
           <picture>
-            <img src="./img/svg/facebook.svg" alt="Facebook" />
+            <img src="./img/facebook.png" alt="Facebook" />
           </picture>
           <picture>
-            <img src="./img//svg/instagram.svg" alt="Instagram" />
+            <img src="./img/instagram.png" alt="Instagram" />
           </picture>
           <picture>
-            <img src="./img/svg/twitter.svg" alt="Twitter" />
+            <img src="./img/twitter.png" alt="Twitter" />
           </picture>
         </div>
       </div>
-      <div>
-        <h4>© Copyright NataVergara. Todos los derechos deservados</h4>
+      <div class="footer__copy">
+        <h4 class="footer__copy--h4">
+          © Copyright NataVergara. Todos los derechos reservados
+        </h4>
       </div>
     </footer>
 

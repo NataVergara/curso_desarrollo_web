@@ -1,2 +1,92 @@
 // estilos footer
+.footer {
+  margin-top: 8.4em;
+  background-color: $text-color;
 
+  &__box {
+    height: 351px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $blanco;
+    margin-left: 10.6em;
+    margin-right: 10.6em;
+
+    &--fbox1 {
+      width: 30%;
+      text-align: center;
+      p {
+        padding: 10px;
+        font-size: $text-body;
+      }
+    }
+
+    &--fbox2 {
+      h3 {
+        font-family: $font-titulo;
+        font-size: $text-h4;
+      }
+      ul {
+        padding-left: 0px;
+        padding-top: 17px;
+        li {
+          list-style-type: none;
+
+          a {
+            color: $blanco;
+            font-size: $text-body;
+
+            &:hover {
+              color: $tercero;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    &--fbox3 {
+      h3 {
+        font-family: $font-titulo;
+        font-size: $text-h4;
+      }
+      ul {
+        padding-left: 0px;
+        padding-top: 17px;
+        li {
+          list-style-type: none;
+          padding: 1px;
+
+          a {
+            color: $blanco;
+            font-size: $text-body;
+          }
+        }
+      }
+    }
+
+    &--fbox4 {
+      h3 {
+        font-family: $font-titulo;
+        font-size: $text-h4;
+        margin-top: -55px;
+        padding-bottom: 20px;
+      }
+      picture {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &__copy {
+    height: 80px;
+    background-color: $primero;
+    text-align: center;
+    &--h4 {
+      padding-top: 27px;
+      color: $blanco;
+      font-family: $font-titulo;
+      font-size: 1.5em;
+    }
+  }
+}

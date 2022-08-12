@@ -1,0 +1,40 @@
+
+/* header */
+
+@mixin nav {
+  position: relative;
+  color: $blanco;
+  text-decoration: none;
+}
+
+@mixin header($imagenheader, $alt) {
+    background-image: $imagenheader;
+    height: $alt;
+  }
+
+/* slider index */  
+
+@mixin sliderh3 {
+  font-family: $font-titulo;
+  font-size: $text-h3;
+  color: $primero;
+}
+
+@mixin sliderp {
+  font-family: $font-texto;
+  font-size: $text-body;
+  margin-top: 20px;
+}
+
+/* servicios index */
+
+@mixin boxh2 {
+  font-family: $font-titulo;
+  font-size: $text-h2;
+}
+
+@mixin boxp {
+  font-size: $text-body;
+}
+
+
