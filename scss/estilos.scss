@@ -1,9 +1,12 @@
 @import "./extras/variables";
 @import "./extras/normalize";
-@import "./extras/maps";
 @import "./extras/mixins";
 @import "./partials/header";
 @import "./partials/footer";
-@import"./views/index";
+@import "./views/index";
+@import "./views/tutoriales";
+@import "./views/tiquetes";
+@import "./views/promociones";
+@import "./views/contacto";
 
 

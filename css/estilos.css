@@ -4,6 +4,7 @@
 /*font-family*/
 /*font-size*/
 /* margenes del sitio */
+/* media queries */
 @import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap);
 * {
   margin: 0;
@@ -22,23 +23,38 @@ a {
 /* header */
 /* slider index */
 /* servicios index */
+/* card tiquetes */
+.header__img--img {
+  width: 100%;
+  height: 704px;
+  object-fit: cover; }
+
 .header__logo {
+  z-index: 1;
+  margin-top: -650px;
   display: flex;
   justify-content: center; }
-  .header__logo--img {
-    margin-top: 50px; }
 
 .header__nav--lista {
-  justify-content: center;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 23px; }
+  @media screen and (max-width: 720px) {
+    .header__nav--lista {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .header__nav--item {
   padding: 15px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 2em;
   text-transform: uppercase; }
+  @media screen and (max-width: 720px) {
+    .header__nav--item {
+      padding: 3px;
+      font-size: 1.6em; } }
   .header__nav--item .inicio {
     position: relative;
     color: #FFFFFF;
@@ -46,7 +62,7 @@ a {
   .header__nav--item .inicio:hover,
   .header__nav--item .inicio:focus {
     color: #FFFFFF;
-    outline: none; }
+    outline-color: #CE8F5A; }
   .header__nav--item .inicio:before {
     content: "";
     position: absolute;
@@ -158,45 +174,63 @@ a {
 .textppal {
   position: relative;
   z-index: 2;
-  top: -350px;
+  top: 50px;
   text-align: center; }
-  .textppal__text {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center; }
-    .textppal__text--h1 {
-      font-family: "Yanone Kaffeesatz", sans-serif;
-      font-size: 5em;
-      color: #CE8F5A; }
-    .textppal__text--p {
-      font-size: 1.1em;
-      color: #FFFFFF;
-      width: 450px; }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   margin-top: 8.4em;
   background-color: #1D1D1D; }
   .footer__box {
     height: 351px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    color: #FFFFFF;
-    margin-left: 10.6em;
-    margin-right: 10.6em; }
+    color: #FFFFFF; }
+    @media screen and (max-width: 720px) {
+      .footer__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 850px; } }
     .footer__box--fbox1 {
-      width: 30%;
+      width: 20%;
       text-align: center; }
+      @media screen and (max-width: 720px) {
+        .footer__box--fbox1 {
+          width: 80%; } }
+      @media screen and (max-width: 540px) {
+        .footer__box--fbox1 {
+          margin-top: 25px; } }
+      @media screen and (max-width: 1140px) {
+        .footer__box--fbox1 picture img {
+          width: 234px;
+          height: 95px; } }
+      @media screen and (max-width: 960px) {
+        .footer__box--fbox1 picture img {
+          width: 214px;
+          height: 75px; } }
+      @media screen and (max-width: 720px) {
+        .footer__box--fbox1 picture img {
+          width: 264px;
+          height: 125px; } }
       .footer__box--fbox1 p {
         padding: 10px;
         font-size: 1.1em; }
     .footer__box--fbox2 h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
-      font-size: 2.5em; }
+      font-size: 2em; }
+      @media screen and (max-width: 720px) {
+        .footer__box--fbox2 h3 {
+          text-align: center; } }
     .footer__box--fbox2 ul {
       padding-left: 0px;
       padding-top: 17px; }
+      @media screen and (max-width: 720px) {
+        .footer__box--fbox2 ul {
+          text-align: center;
+          padding-top: 0px; } }
       .footer__box--fbox2 ul li {
         list-style-type: none; }
         .footer__box--fbox2 ul li a {
@@ -207,10 +241,17 @@ a {
             text-decoration: underline; }
     .footer__box--fbox3 h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
-      font-size: 2.5em; }
+      font-size: 2em; }
+      @media screen and (max-width: 720px) {
+        .footer__box--fbox3 h3 {
+          text-align: center; } }
     .footer__box--fbox3 ul {
       padding-left: 0px;
       padding-top: 17px; }
+      @media screen and (max-width: 720px) {
+        .footer__box--fbox3 ul {
+          text-align: center;
+          padding-top: 0px; } }
       .footer__box--fbox3 ul li {
         list-style-type: none;
         padding: 1px; }
@@ -219,11 +260,19 @@ a {
           font-size: 1.1em; }
     .footer__box--fbox4 h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
-      font-size: 2.5em;
+      font-size: 2em;
       margin-top: -55px;
       padding-bottom: 20px; }
+      @media screen and (max-width: 720px) {
+        .footer__box--fbox4 h3 {
+          text-align: center;
+          margin-top: 10px; } }
     .footer__box--fbox4 picture {
       padding-right: 10px; }
+      @media screen and (max-width: 720px) {
+        .footer__box--fbox4 picture {
+          padding-right: 0px;
+          padding: 5px; } }
   .footer__copy {
     height: 80px;
     background-color: #CE8F5A;
@@ -234,12 +283,36 @@ a {
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 1.5em; }
 
-/* header */
-.header {
-  background-image: url("/img/home.png");
-  height: 704px; }
+.textppal__texti {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; }
+  .textppal__texti--h1 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 5em;
+    color: #CE8F5A; }
+    @media screen and (max-width: 720px) {
+      .textppal__texti--h1 {
+        font-size: 3.6em;
+        margin-top: -30px; } }
+    @media screen and (max-width: 540px) {
+      .textppal__texti--h1 {
+        margin-top: -45px; } }
+  .textppal__texti--p {
+    font-size: 1.1em;
+    color: #FFFFFF;
+    width: 800px; }
+    @media screen and (max-width: 720px) {
+      .textppal__texti--p {
+        width: 650px;
+        font-size: 1em; } }
+    @media screen and (max-width: 540px) {
+      .textppal__texti--p {
+        width: 450px; } }
 
 .btn {
+  border-radius: 0px;
   color: #CE8F5A;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5em;
@@ -253,96 +326,108 @@ a {
 
 .galeria__box {
   display: flex;
-  margin-top: -265px; }
+  justify-content: center;
+  margin-top: 172px; }
+  @media screen and (max-width: 720px) {
+    .galeria__box {
+      display: none; } }
+  @media screen and (max-width: 960px) {
+    .galeria__box--img1 {
+      display: none; } }
 
 /* por qué visitar colombia */
 .visit {
   margin-top: 8.4em; }
-  .visit__slider {
+  @media screen and (max-width: 720px) {
+    .visit {
+      margin-top: 13em; } }
+  .visit__article {
+    display: flex;
+    justify-content: center; }
+  .visit__box {
     width: 80%;
-    height: 650px;
-    position: relative;
-    margin-top: 2.5em;
-    margin-left: 10.6em;
-    margin-right: 10.6em; }
-    .visit__slider--h2 {
+    height: 600px; }
+    .visit__box--h2 {
+      margin-bottom: 50px;
       text-align: center;
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 3.6em; }
-  .visit__slider1 {
+      @media screen and (max-width: 720px) {
+        .visit__box--h2 {
+          font-size: 2.6em; } }
+    @media screen and (max-width: 1140px) {
+      .visit__box {
+        width: 90%;
+        height: 530px; } }
+    @media screen and (max-width: 960px) {
+      .visit__box {
+        height: 625px; } }
+    @media screen and (max-width: 720px) {
+      .visit__box {
+        height: 770px; } }
+  .visit__box1 {
     display: flex;
     flex-direction: row-reverse;
-    gap: 20px;
-    position: absolute;
-    left: 0px;
-    top: 100px;
-    opacity: 1;
-    background-color: #FFFFFF;
-    transition: opacity 0.5s; }
-    .visit__slider1:target {
-      opacity: 1; }
+    justify-content: center;
+    gap: 20px; }
+    @media screen and (max-width: 720px) {
+      .visit__box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    @media screen and (max-width: 1140px) {
+      .visit__box1--img {
+        height: 450px; } }
+    @media screen and (max-width: 960px) {
+      .visit__box1--img {
+        width: 47.5%;
+        height: 535px;
+        object-fit: cover; } }
+    @media screen and (max-width: 720px) {
+      .visit__box1--img {
+        width: 90%;
+        height: 400px;
+        object-fit: cover; } }
   .visit__text--h3 {
     font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: 3em;
+    font-size: 2.6em;
     color: #CE8F5A; }
+    @media screen and (max-width: 720px) {
+      .visit__text--h3 {
+        text-align: center;
+        font-size: 2em; } }
   .visit__text--p {
     font-family: "Raleway", sans-serif;
     font-size: 1.1em;
     margin-top: 20px; }
-  .visit__slider2 {
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    gap: 20px;
-    left: 0px;
-    top: 100px;
-    opacity: 0;
-    background-color: #FFFFFF;
-    transition: opacity 0.5s; }
-    .visit__slider2:target {
-      opacity: 1; }
-  .visit__slider3 {
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    gap: 20px;
-    left: 0px;
-    top: 100px;
-    opacity: 0;
-    background-color: #FFFFFF;
-    transition: opacity 0.5s; }
-    .visit__slider3:target {
-      opacity: 1; }
-  .visit__menu {
-    display: flex;
-    justify-content: center; }
-    .visit__menu--uno {
-      text-align: center;
-      padding: 15px; }
-      .visit__menu--uno a {
-        display: inline-block;
-        color: #CE8F5A;
-        text-decoration: none;
-        border: 2px solid #CE8F5A;
-        width: 50px;
-        height: 50px;
-        padding: 5px;
-        font-family: "Yanone Kaffeesatz", sans-serif;
-        font-size: 1.5em;
-        border-radius: 100%; }
-        .visit__menu--uno a:hover {
-          background-color: #CE8F5A;
-          color: #FFFFFF; }
+    @media screen and (max-width: 720px) {
+      .visit__text--p {
+        text-align: center;
+        font-size: 1em; } }
 
 /* servios */
 .servicios {
-  margin-top: 7em; }
+  margin-top: 11em; }
+  .servicios__article {
+    display: flex;
+    justify-content: center; }
   .servicios__caja {
     display: flex;
     justify-content: center;
-    width: 80%;
-    margin-left: 10.6em;
-    margin-right: 10.6em; }
+    width: 80%; }
+    @media screen and (max-width: 1140px) {
+      .servicios__caja {
+        width: 90%; } }
+    @media screen and (max-width: 960px) {
+      .servicios__caja {
+        display: flex;
+        justify-content: center;
+        width: 95%; } }
+    @media screen and (max-width: 720px) {
+      .servicios__caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .servicios__caja--box1 {
       width: 26.6%;
       background-color: #EFD199;
@@ -351,9 +436,18 @@ a {
       align-items: center;
       text-align: center;
       padding: 30px; }
+      @media screen and (max-width: 960px) {
+        .servicios__caja--box1 {
+          width: 31.6%; } }
+      @media screen and (max-width: 720px) {
+        .servicios__caja--box1 {
+          width: 80%; } }
       .servicios__caja--box1 h2 {
         font-family: "Yanone Kaffeesatz", sans-serif;
         font-size: 3.6em; }
+        @media screen and (max-width: 720px) {
+          .servicios__caja--box1 h2 {
+            font-size: 2.6em; } }
       .servicios__caja--box1 p {
         font-size: 1.1em; }
     .servicios__caja--box2 {
@@ -364,9 +458,18 @@ a {
       align-items: center;
       text-align: center;
       padding: 30px; }
+      @media screen and (max-width: 960px) {
+        .servicios__caja--box2 {
+          width: 31.6%; } }
+      @media screen and (max-width: 720px) {
+        .servicios__caja--box2 {
+          width: 80%; } }
       .servicios__caja--box2 h2 {
         font-family: "Yanone Kaffeesatz", sans-serif;
         font-size: 3.6em; }
+        @media screen and (max-width: 720px) {
+          .servicios__caja--box2 h2 {
+            font-size: 2.6em; } }
       .servicios__caja--box2 p {
         font-size: 1.1em; }
     .servicios__caja--box3 {
@@ -377,8 +480,786 @@ a {
       align-items: center;
       text-align: center;
       padding: 30px; }
+      @media screen and (max-width: 960px) {
+        .servicios__caja--box3 {
+          width: 31.6%; } }
+      @media screen and (max-width: 720px) {
+        .servicios__caja--box3 {
+          width: 80%; } }
       .servicios__caja--box3 h2 {
         font-family: "Yanone Kaffeesatz", sans-serif;
         font-size: 3.6em; }
+        @media screen and (max-width: 720px) {
+          .servicios__caja--box3 h2 {
+            font-size: 2.6em; } }
       .servicios__caja--box3 p {
         font-size: 1.1em; }
+
+/* header */
+.textppal__textt {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; }
+  .textppal__textt--h1 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 5em;
+    color: #EFD199; }
+    @media screen and (max-width: 720px) {
+      .textppal__textt--h1 {
+        font-size: 3.6em;
+        margin-top: -30px; } }
+    @media screen and (max-width: 540px) {
+      .textppal__textt--h1 {
+        margin-top: -45px; } }
+  .textppal__textt--p {
+    font-size: 1.1em;
+    color: #FFFFFF;
+    width: 800px; }
+    @media screen and (max-width: 720px) {
+      .textppal__textt--p {
+        width: 650px;
+        font-size: 1em; } }
+    @media screen and (max-width: 540px) {
+      .textppal__textt--p {
+        width: 450px; } }
+
+/* seccion sobrepuesta */
+.boxppal__caja {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  margin-top: 120px;
+  margin-left: 10.6em;
+  margin-right: 10.6em; }
+  @media screen and (max-width: 960px) {
+    .boxppal__caja {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  @media screen and (max-width: 720px) {
+    .boxppal__caja {
+      margin-top: 70px;
+      margin-left: 8%;
+      margin-right: 8%; } }
+  @media screen and (max-width: 540px) {
+    .boxppal__caja {
+      margin-top: 100px; } }
+
+.boxppal__text {
+  background-color: #EFD199; }
+  .boxppal__text--p {
+    padding: 60px;
+    padding-top: 85px;
+    font-size: 1.1em; }
+    @media screen and (max-width: 1320px) {
+      .boxppal__text--p {
+        padding: 45px; } }
+    @media screen and (max-width: 1140px) {
+      .boxppal__text--p {
+        padding: 25px; } }
+    @media screen and (max-width: 720px) {
+      .boxppal__text--p {
+        font-size: 1em; } }
+
+@media screen and (max-width: 1320px) {
+  .boxppal__img--img {
+    width: 500px;
+    height: 530px;
+    object-fit: cover; } }
+
+@media screen and (max-width: 1140px) {
+  .boxppal__img--img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover; } }
+
+@media screen and (max-width: 960px) {
+  .boxppal__img--img {
+    width: 620px;
+    height: 300px;
+    object-fit: cover; } }
+
+@media screen and (max-width: 720px) {
+  .boxppal__img--img {
+    width: 604.8px;
+    height: 300px;
+    object-fit: cover; } }
+
+@media screen and (max-width: 540px) {
+  .boxppal__img--img {
+    width: 453.6px;
+    height: 300px;
+    object-fit: cover; } }
+
+/* como encontrar hoteles baratos */
+.hotelesb {
+  margin-top: 8.4em; }
+  .hotelesb__caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .hotelesb__caja--h2 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 3.6em;
+      margin-bottom: 20px;
+      text-align: center; }
+      @media screen and (max-width: 720px) {
+        .hotelesb__caja--h2 {
+          font-size: 2.6em; } }
+    .hotelesb__caja--p {
+      width: 80%;
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.1em; }
+      @media screen and (max-width: 720px) {
+        .hotelesb__caja--p {
+          font-size: 1em; } }
+  .hotelesb__img--img {
+    width: 100%;
+    margin-top: 20px; }
+  .hotelesb__item1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; }
+    .hotelesb__item1--b1 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 70px;
+      background-color: #F4F4F4;
+      padding: 15px; }
+      @media screen and (max-width: 960px) {
+        .hotelesb__item1--b1 {
+          font-size: 1.5em;
+          height: 60px; } }
+      @media screen and (max-width: 720px) {
+        .hotelesb__item1--b1 {
+          height: 80px; } }
+  .hotelesb__item2 {
+    display: flex;
+    justify-content: center; }
+    .hotelesb__item2--b2 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 70px;
+      background-color: #FFFFFF;
+      padding: 15px; }
+      @media screen and (max-width: 960px) {
+        .hotelesb__item2--b2 {
+          font-size: 1.5em;
+          height: 60px;
+          padding: 6px; } }
+      @media screen and (max-width: 540px) {
+        .hotelesb__item2--b2 {
+          height: 70px; } }
+  .hotelesb__item3 {
+    display: flex;
+    justify-content: center; }
+    .hotelesb__item3--b3 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 100px;
+      background-color: #F4F4F4;
+      padding: 15px; }
+      @media screen and (max-width: 960px) {
+        .hotelesb__item3--b3 {
+          font-size: 1.5em;
+          height: 80px;
+          padding: 10px; } }
+      @media screen and (max-width: 720px) {
+        .hotelesb__item3--b3 {
+          height: 120px;
+          padding: 15px; } }
+      @media screen and (max-width: 540px) {
+        .hotelesb__item3--b3 {
+          height: 140px; } }
+  .hotelesb__item4 {
+    display: flex;
+    justify-content: center; }
+    .hotelesb__item4--b4 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 70px;
+      background-color: #FFFFFF;
+      padding: 15px; }
+      @media screen and (max-width: 960px) {
+        .hotelesb__item4--b4 {
+          font-size: 1.5em;
+          height: 50px;
+          padding: 6px; } }
+      @media screen and (max-width: 720px) {
+        .hotelesb__item4--b4 {
+          height: 60px;
+          padding: 0px; } }
+  .hotelesb__item5 {
+    display: flex;
+    justify-content: center; }
+    .hotelesb__item5--b5 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 70px;
+      background-color: #F4F4F4;
+      padding: 15px; }
+      @media screen and (max-width: 960px) {
+        .hotelesb__item5--b5 {
+          font-size: 1.5em;
+          height: 60px; } }
+      @media screen and (max-width: 540px) {
+        .hotelesb__item5--b5 {
+          height: 80px; } }
+  .hotelesb__texto {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; }
+    .hotelesb__texto--p {
+      width: 80%;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.1em;
+      text-align: center; }
+      @media screen and (max-width: 720px) {
+        .hotelesb__texto--p {
+          font-size: 1em; } }
+
+/* los mejores portales */
+.portales {
+  margin-top: 8.4em; }
+  @media screen and (max-width: 540px) {
+    .portales {
+      margin-top: 6.4em; } }
+  .portales__caja {
+    display: flex;
+    justify-content: center;
+    gap: 20px; }
+    @media screen and (max-width: 960px) {
+      .portales__caja {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center; } }
+  .portales__texto {
+    width: 35%;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1em; }
+    @media screen and (max-width: 960px) {
+      .portales__texto {
+        width: 60%;
+        text-align: center; } }
+    @media screen and (max-width: 720px) {
+      .portales__texto {
+        width: 80%;
+        font-size: 1em; } }
+  .portales__link {
+    display: flex;
+    flex-direction: column; }
+  .portales__titulo--h2 {
+    font-size: 3.6em;
+    font-family: "Yanone Kaffeesatz", sans-serif; }
+    @media screen and (max-width: 960px) {
+      .portales__titulo--h2 {
+        text-align: center; } }
+    @media screen and (max-width: 720px) {
+      .portales__titulo--h2 {
+        font-size: 2.6em; } }
+  .portales__lista--ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px; }
+    .portales__lista--ul li {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 1.5em;
+      background-color: #EFD199;
+      width: 150px;
+      height: 80px;
+      padding-top: 20px; }
+      .portales__lista--ul li a {
+        color: #6287A2; }
+        .portales__lista--ul li a:hover {
+          font-weight: 700; }
+
+.textppal__textti {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; }
+  .textppal__textti--h1 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 5em;
+    color: #80C8BC; }
+    @media screen and (max-width: 720px) {
+      .textppal__textti--h1 {
+        font-size: 3.6em;
+        margin-top: 0px; } }
+    @media screen and (max-width: 540px) {
+      .textppal__textti--h1 {
+        margin-top: 0px; } }
+  .textppal__textti--p {
+    font-size: 1.1em;
+    color: #FFFFFF;
+    width: 500px; }
+    @media screen and (max-width: 720px) {
+      .textppal__textti--p {
+        width: 450px;
+        font-size: 1em; } }
+    @media screen and (max-width: 540px) {
+      .textppal__textti--p {
+        width: 400px; } }
+
+/* seis consejos para conseguir tiquetes de avion baratos*/
+.consejos {
+  margin-top: 400px; }
+  @media screen and (max-width: 960px) {
+    .consejos {
+      margin-top: 300px; } }
+  .consejos__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .consejos__article--h2 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 3.6em;
+      text-align: center; }
+      @media screen and (max-width: 960px) {
+        .consejos__article--h2 {
+          width: 80%; } }
+      @media screen and (max-width: 720px) {
+        .consejos__article--h2 {
+          font-size: 2.6em; } }
+  .consejos__box {
+    display: flex;
+    margin-top: 2em;
+    width: 80%;
+    gap: 20px; }
+    @media screen and (max-width: 960px) {
+      .consejos__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+  .consejos__text--h3 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: #80C8BC;
+    font-size: 2.6em; }
+    @media screen and (max-width: 960px) {
+      .consejos__text--h3 {
+        text-align: center; } }
+    @media screen and (max-width: 720px) {
+      .consejos__text--h3 {
+        font-size: 2em; } }
+  .consejos__text--p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1em; }
+    @media screen and (max-width: 960px) {
+      .consejos__text--p {
+        text-align: center; } }
+    @media screen and (max-width: 720px) {
+      .consejos__text--p {
+        font-size: 1em; } }
+  @media screen and (max-width: 1140px) {
+    .consejos__img--img {
+      width: 400px;
+      height: 500px;
+      object-fit: cover; } }
+  @media screen and (max-width: 960px) {
+    .consejos__img--img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover; } }
+
+/* cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 8.4em; }
+  @media screen and (max-width: 960px) {
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  .cards__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+    width: 80%; }
+    @media screen and (max-width: 960px) {
+      .cards__box {
+        grid-template-columns: repeat(1, 1fr); } }
+  .cards__b1 {
+    width: 90%;
+    height: 400px;
+    background-color: #80C8BC;
+    padding: 50px; }
+    @media screen and (max-width: 540px) {
+      .cards__b1 {
+        height: 500px; } }
+    .cards__b1--h3 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 2.6em;
+      color: #FFFFFF;
+      padding-bottom: 50px; }
+      @media screen and (max-width: 720px) {
+        .cards__b1--h3 {
+          font-size: 2em; } }
+    .cards__b1--linea {
+      border-top: 3px solid #FFFFFF;
+      height: 2px;
+      max-width: 100%;
+      padding-bottom: 15px;
+      margin: 0; }
+    .cards__b1--p {
+      font-family: "Raleway", sans-serif;
+      font-family: 1.1em;
+      color: #FFFFFF;
+      font-weight: 400; }
+  .cards__b2 {
+    width: 90%;
+    height: 400px;
+    background-color: #80C8BC;
+    padding: 50px; }
+    @media screen and (max-width: 540px) {
+      .cards__b2 {
+        height: 500px; } }
+    .cards__b2--h3 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 2.6em;
+      color: #FFFFFF; }
+      @media screen and (max-width: 720px) {
+        .cards__b2--h3 {
+          font-size: 2em; } }
+    .cards__b2--linea {
+      border-top: 3px solid #FFFFFF;
+      height: 2px;
+      max-width: 100%;
+      padding-bottom: 15px;
+      margin: 0; }
+    .cards__b2--p {
+      font-family: "Raleway", sans-serif;
+      font-family: 1.1em;
+      color: #FFFFFF;
+      font-weight: 400; }
+  .cards__b3 {
+    width: 90%;
+    height: 400px;
+    background-color: #80C8BC;
+    padding: 50px; }
+    @media screen and (max-width: 540px) {
+      .cards__b3 {
+        height: 500px; } }
+    .cards__b3--h3 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 2.6em;
+      color: #FFFFFF;
+      padding-bottom: 50px; }
+      @media screen and (max-width: 720px) {
+        .cards__b3--h3 {
+          font-size: 2em; } }
+    .cards__b3--linea {
+      border-top: 3px solid #FFFFFF;
+      height: 2px;
+      max-width: 100%;
+      padding-bottom: 15px;
+      margin: 0; }
+    .cards__b3--p {
+      font-family: "Raleway", sans-serif;
+      font-family: 1.1em;
+      color: #FFFFFF;
+      font-weight: 400; }
+  .cards__b4 {
+    width: 90%;
+    height: 400px;
+    background-color: #80C8BC;
+    padding: 50px; }
+    @media screen and (max-width: 540px) {
+      .cards__b4 {
+        height: 500px; } }
+    .cards__b4--h3 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 2.6em;
+      color: #FFFFFF; }
+      @media screen and (max-width: 720px) {
+        .cards__b4--h3 {
+          font-size: 2em; } }
+    .cards__b4--linea {
+      border-top: 3px solid #FFFFFF;
+      height: 2px;
+      max-width: 100%;
+      padding-bottom: 15px;
+      margin: 0; }
+    .cards__b4--p {
+      font-family: "Raleway", sans-serif;
+      font-family: 1.1em;
+      color: #FFFFFF;
+      font-weight: 400; }
+  .cards__b5 {
+    width: 90%;
+    height: 400px;
+    background-color: #80C8BC;
+    padding: 50px; }
+    @media screen and (max-width: 540px) {
+      .cards__b5 {
+        height: 500px; } }
+    .cards__b5--h3 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 2.6em;
+      color: #FFFFFF; }
+      @media screen and (max-width: 720px) {
+        .cards__b5--h3 {
+          font-size: 2em; } }
+    .cards__b5--linea {
+      border-top: 3px solid #FFFFFF;
+      height: 2px;
+      max-width: 100%;
+      padding-bottom: 15px;
+      margin: 0; }
+    .cards__b5--p {
+      font-family: "Raleway", sans-serif;
+      font-family: 1.1em;
+      color: #FFFFFF;
+      font-weight: 400; }
+  .cards__b6 {
+    width: 90%;
+    height: 400px;
+    background-color: #80C8BC;
+    padding: 50px; }
+    @media screen and (max-width: 540px) {
+      .cards__b6 {
+        height: 500px; } }
+    .cards__b6--h3 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 2.6em;
+      color: #FFFFFF;
+      padding-bottom: 50px; }
+      @media screen and (max-width: 720px) {
+        .cards__b6--h3 {
+          font-size: 2em; } }
+    .cards__b6--linea {
+      border-top: 3px solid #FFFFFF;
+      height: 2px;
+      max-width: 100%;
+      padding-bottom: 15px;
+      margin: 0; }
+    .cards__b6--p {
+      font-family: "Raleway", sans-serif;
+      font-family: 1.1em;
+      color: #FFFFFF;
+      font-weight: 400; }
+
+.textppal__textp {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; }
+  .textppal__textp--h1 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 5em;
+    color: #80C8BC;
+    width: 900px;
+    line-height: 70px; }
+    @media screen and (max-width: 720px) {
+      .textppal__textp--h1 {
+        font-size: 3.6em;
+        margin-top: -30px;
+        width: 600px;
+        line-height: 55px; } }
+    @media screen and (max-width: 540px) {
+      .textppal__textp--h1 {
+        margin-top: -45px;
+        width: 400px; } }
+  .textppal__textp--p {
+    font-size: 1.1em;
+    color: #FFFFFF;
+    width: 900px;
+    margin-top: 20px; }
+    @media screen and (max-width: 720px) {
+      .textppal__textp--p {
+        width: 650px;
+        font-size: 1em; } }
+    @media screen and (max-width: 540px) {
+      .textppal__textp--p {
+        width: 450px; } }
+
+/* aerolineas */
+.promos {
+  margin-top: 260px; }
+  @media screen and (max-width: 720px) {
+    .promos {
+      margin-top: 200px; } }
+  .promos__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .promos__b1 {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 720px) {
+      .promos__b1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    .promos__b1--img {
+      background-color: #5EC0CA; }
+    .promos__b1--h2 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 3em; }
+      @media screen and (max-width: 720px) {
+        .promos__b1--h2 {
+          text-align: center;
+          font-size: 2.2em; } }
+      .promos__b1--h2 a {
+        color: #1D1D1D; }
+        .promos__b1--h2 a:hover {
+          color: #5EC0CA; }
+    .promos__b1--p {
+      font-size: 1.1em;
+      width: 80%; }
+      @media screen and (max-width: 720px) {
+        .promos__b1--p {
+          text-align: center;
+          margin-left: 10%;
+          margin-right: 10%;
+          font-size: 1em; } }
+  .promos__b2 {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 720px) {
+      .promos__b2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    .promos__b2--img {
+      background-color: #5EC0CA; }
+    .promos__b2--h2 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 3em; }
+      @media screen and (max-width: 720px) {
+        .promos__b2--h2 {
+          text-align: center;
+          font-size: 2.2em; } }
+      .promos__b2--h2 a {
+        color: #1D1D1D; }
+        .promos__b2--h2 a:hover {
+          color: #5EC0CA; }
+    .promos__b2--p {
+      font-size: 1.1em;
+      width: 80%; }
+      @media screen and (max-width: 720px) {
+        .promos__b2--p {
+          text-align: center;
+          margin-left: 10%;
+          margin-right: 10%;
+          font-size: 1em; } }
+  .promos__b3 {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 30px; }
+    @media screen and (max-width: 720px) {
+      .promos__b3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    .promos__b3--img {
+      background-color: #5EC0CA; }
+    .promos__b3--h2 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-size: 3em; }
+      @media screen and (max-width: 720px) {
+        .promos__b3--h2 {
+          text-align: center;
+          font-size: 2.2em; } }
+      .promos__b3--h2 a {
+        color: #1D1D1D; }
+        .promos__b3--h2 a:hover {
+          color: #5EC0CA; }
+    .promos__b3--p {
+      font-size: 1.1em;
+      width: 80%; }
+      @media screen and (max-width: 720px) {
+        .promos__b3--p {
+          text-align: center;
+          margin-left: 10%;
+          margin-right: 10%;
+          font-size: 1em; } }
+
+.textppal__textc {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; }
+  .textppal__textc--h1 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 5em;
+    color: #6287A2;
+    width: 300px; }
+    @media screen and (max-width: 720px) {
+      .textppal__textc--h1 {
+        font-size: 3.6em;
+        margin-top: -30px; } }
+    @media screen and (max-width: 540px) {
+      .textppal__textc--h1 {
+        margin-top: -45px; } }
+
+/* formulario */
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; }
+  .form__box {
+    display: flex;
+    justify-content: center;
+    width: 80%; }
+    @media screen and (max-width: 1140px) {
+      .form__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+  .form__form {
+    width: 40%;
+    background-color: #6287A2;
+    padding: 50px; }
+    @media screen and (max-width: 1140px) {
+      .form__form {
+        width: 630px; } }
+    @media screen and (max-width: 540px) {
+      .form__form {
+        width: 100%; } }
+    .form__form--p {
+      color: #FFFFFF;
+      font-size: 1.1em;
+      margin-bottom: 40px; }
+  @media screen and (max-width: 1140px) {
+    .form__img--img {
+      display: none; } }
+  .form textarea:focus,
+  .form input:focus,
+  .form input[type]:focus {
+    border-color: #80C8BC;
+    box-shadow: 0 1px 1px #80C8BC inset, 0 0 8px #80C8BC;
+    outline: 0 none; }
+  .form .form-control {
+    border-radius: 0px; }
+  .form .btn {
+    margin-top: 40px;
+    border-radius: 0px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF; }
+    .form .btn:hover {
+      background-color: #FFFFFF;
+      color: #6287A2; }

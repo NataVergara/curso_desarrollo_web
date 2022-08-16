@@ -1,19 +1,36 @@
 // estilos header
 .header {
+
+  &__img{  
+
+    &--img{
+    width: 100%;
+    height: 704px;
+    object-fit: cover;
+    
+    }
+  }
+
   &__logo {
+    z-index: 1;
+    margin-top: -650px;
     display: flex;
     justify-content: center;
 
-    &--img {
-      margin-top: 50px;
-    }
   }
   &__nav {
     &--lista {
-      justify-content: center;
       display: flex;
       flex-direction: row;
+      justify-content: center;
       margin-top: 23px;
+
+      @media screen and (max-width:$md) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
     }
 
     &--item {
@@ -22,6 +39,11 @@
       font-size: 2em;
       text-transform: uppercase;
 
+      @media screen and (max-width:$md) {
+        padding: 3px;
+        font-size: 1.6em;
+      }
+
       .inicio {
         @include nav;
       }
@@ -29,7 +51,7 @@
       .inicio:hover,
       .inicio:focus {
         color: $blanco;
-        outline: none;
+        outline-color: $primero;
       }
 
       .inicio:before {
@@ -173,24 +195,8 @@
 .textppal {
   position: relative;
   z-index: 2;
-  top: -350px;
+  top: 50px;
   text-align: center;
 
-  &__text {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-
-    &--h1 {
-      font-family: $font-titulo;
-      font-size: $text-h1;
-      color: $primero;
-    }
-    &--p {
-      font-size: $text-body;
-      color: $blanco;
-      width: 450px;
-    }
-  }
+  
 }

@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Te ayudamos a programar tu proximo viaje. ¡llamanos!">
+    <meta name="keywords" content="agencia de viajes, vuelos baratos, hoteles baratos, tiquetes baratos, descubre colombia">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet" />
-    <link rel="icon" href="./img/favicon-09.png" />
+    <link rel="icon" href="../img/favicon-09.png" />
 
     <!-- CSS AOS Animation -->
 
@@ -23,65 +25,88 @@
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="../css/estilos.css" />
 
-    <title>Vuela Barato Colombia</title>
+    <title>Contáctanos y te acompañamos en todas tus aventuras</title>
 </head>
 
 <body>
-    <header>
-        <picture>
-            <img src="../img/contac1.png" alt="Vuela barato Colombia" />
+    <header class="header">
+        <picture class="header__img">
+            <img class="header__img--img" src="../img/contac1.png" alt="Vuela por Colombia" />
         </picture>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./tutoriales.html">Tutoriales</a></li>
-                <li><a href="./tiquetes.html">Tiquetes</a></li>
-                <li><a href="./promociones.html">Promociones</a></li>
-                <li><a href="./contacto.html">Contáctanos</a></li>
+        <picture class="header__logo">
+            <img class="header__logo--img" src="../img/logo.png" alt="Visita Colombia" />
+        </picture>
+        <nav class="header__nav">
+            <ul class="header__nav--lista">
+                <li class="header__nav--item"><a class="inicio" href="../index.html">Inicio</a></li>
+                <li class="header__nav--item"><a class="tuto" href="./tutoriales.html">Tutoriales</a></li>
+                <li class="header__nav--item"><a class="tique" href="./tiquetes.html">Tiquetes</a></li>
+                <li class="header__nav--item"><a class="promo" href="./promociones.html">Promociones</a></li>
+                <li class="header__nav--item"><a class="contact" href="./contacto.html">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- texto encabezado -->
-        <section>
-            <article>
-                <h1>CONTÁCTANOS</h1>
+        <section class="textppal">
+            <article class="textppal__textc">
+                <h1 class="textppal__textc--h1">Contáctanos</h1>
+
             </article>
         </section>
 
         <!-- forms -->
 
-        <section>
-            <div>
-                <div>
-                    <p>Envianos tus dudas y te asesoramos en tu próximo viaje</p>
+        <section class="form">
+            <div class="form__box">
+                <div class="form__form">
+                    <p class="form__form--p">Envianos tus dudas y te asesoramos en tu próximo viaje</p>
+
+
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="floatingname" placeholder="name">
+                        <label for="floatingInput">Nombre completo</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingemail" placeholder="name@example.com">
+                        <label for="floatingPassword">Email</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Mensaje</label>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-light">Enviar</button>
                 </div>
-                <div>
-                    <img src="../img/contac2.png" alt="">
+                <div class="form__img">
+                    <img class="form__img--img" src="../img/contac2.png" alt="">
                 </div>
             </div>
         </section>
 
         <!-- footer -->
 
-        <footer>
-            <div>
-                <div>
+        <footer class="footer">
+            <div class="footer__box">
+                <div class="footer__box--fbox1">
                     <picture>
-                        <img src="../img/Logo vuelva barato-06.png" alt="Logo vuelva barato colombia" />
+                        <img src="../img/logofooter.png" alt="Logo vuelva barato colombia" />
                     </picture>
-                    <p>Descubre Colombia con nosotros y aprovecha muchas promociones</p>
+                    <p class="p">
+                        Descubre Colombia con nosotros y aprovecha muchas promociones
+                    </p>
                 </div>
-                <div>
+                <div class="footer__box--fbox2">
                     <h3>MENÚ</h3>
                     <ul>
-                        <li><a href="./pages/tutoriales.html"></a></li>
-                        <li><a href="./pages/tiquetes.html"></a></li>
-                        <li><a href="./pages/promociones.html"></a></li>
-                        <li><a href="./pages/contacto.html"></a></li>
+                        <li><a href="./tutoriales.html">Tutoriales</a></li>
+                        <li><a href="./tiquetes.html">Tiquetes</a></li>
+                        <li><a href="./promociones.html">Promociones</a></li>
+                        <li><a href="./pcontacto.html">Contáctanos</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer__box--fbox3">
                     <h3>CONTACTO</h3>
                     <ul>
                         <li>Dirección: Calle 32E # 52-70</li>
@@ -90,20 +115,23 @@
                         <li>Medellín - Colombia</li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer__box--fbox4">
+                    <h3>REDES SOCIALES</h3>
                     <picture>
-                        <img src="../img/svg/facebook.svg" alt="Facebook" />
+                        <img src="../img/facebook.png" alt="Facebook" />
                     </picture>
                     <picture>
-                        <img src="../img//svg/instagram.svg" alt="Instagram" />
+                        <img src="../img/instagram.png" alt="Instagram" />
                     </picture>
                     <picture>
-                        <img src="../img/svg/twitter.svg" alt="Twitter" />
+                        <img src="../img/twitter.png" alt="Twitter" />
                     </picture>
                 </div>
             </div>
-            <div>
-                <h4>© Copyright NataVergara. Todos los derechos deservados</h4>
+            <div class="footer__copy">
+                <h4 class="footer__copy--h4">
+                    © Copyright NataVergara. Todos los derechos reservados
+                </h4>
             </div>
         </footer>
 

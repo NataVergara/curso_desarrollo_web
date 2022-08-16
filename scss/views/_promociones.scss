@@ -1,0 +1,202 @@
+// Estilos promos
+
+.textppal__textp {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    &--h1 {
+        font-family: $font-titulo;
+        font-size: $text-h1;
+        color: $tercero;
+        width: 900px;
+        line-height: 70px;
+        @media screen and (max-width:$md) {
+            font-size: $text-h2;
+            margin-top: -30px;
+            width: 600px;
+            line-height: 55px;
+          }
+          @media screen and (max-width:$sm) {
+            margin-top: -45px;
+            width: 400px;
+            
+          }
+        
+    }
+
+    &--p {
+        font-size: $text-body;
+        color: $blanco;
+        width: 900px;
+        margin-top: 20px;
+        @media screen and (max-width:$md) {
+            width: 650px;
+            font-size: 1em;
+          }
+          @media screen and (max-width:$sm) {
+            width: 450px;
+            
+          }
+    }
+}
+
+/* aerolineas */
+
+.promos{
+    margin-top: 260px;
+    @media screen and (max-width:$md) {
+        margin-top: 200px;
+      }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+    }
+
+    &__b1{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width:$md) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+          }
+
+        &--img{
+            background-color: $cuarto;
+        }
+
+        &--h2{
+            font-family: $font-titulo;
+            font-size: 3em;
+            @media screen and (max-width:$md) {
+                text-align: center;
+                font-size: 2.2em;
+            }
+            a{
+                color: $text-color;
+                &:hover{
+                    color: $cuarto;
+                }
+            }
+
+        }
+
+        &--p{
+            font-size: $text-body;
+            width: 80%;
+            @media screen and (max-width:$md) {
+                text-align: center;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 1em;
+            
+            }
+        }
+
+    }
+    &__b2{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+        @media screen and (max-width:$md) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+          }
+
+        &--img{
+            background-color: $cuarto;
+        }
+
+        &--h2{
+            font-family: $font-titulo;
+            font-size: 3em;
+            @media screen and (max-width:$md) {
+                text-align: center;
+                font-size: 2.2em;
+            }
+            a{
+                color: $text-color;
+
+                &:hover{
+                    color: $cuarto;
+                }
+            }
+
+        }
+
+        &--p{
+            font-size: $text-body;
+            width: 80%;
+            @media screen and (max-width:$md) {
+                text-align: center;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 1em;
+            }
+        }
+
+    }
+    &__b3{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        gap: 30px;
+        @media screen and (max-width:$md) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        
+
+        &--img{
+            background-color: $cuarto;
+            
+        }
+
+        &--h2{
+            font-family: $font-titulo;
+            font-size: 3em;
+
+            @media screen and (max-width:$md) {
+                text-align: center;
+                font-size: 2.2em;
+            }
+            a{
+                color: $text-color;
+                &:hover{
+                    color: $cuarto;
+                }
+            }
+
+        }
+
+        &--p{
+            font-size: $text-body;
+            width: 80%;
+            @media screen and (max-width:$md) {
+                text-align: center;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 1em;
+            }
+        }
+
+    }
+}

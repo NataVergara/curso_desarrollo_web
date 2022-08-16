@@ -1,0 +1,249 @@
+.textppal__textti {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    &--h1 {
+        font-family: $font-titulo;
+        font-size: $text-h1;
+        color: $tercero;
+        @media screen and (max-width:$md) {
+            font-size: $text-h2;
+            margin-top: 0px;
+            
+          }
+          @media screen and (max-width:$sm) {
+            margin-top: 0px;
+            
+          }
+    }
+
+    &--p {
+        font-size: $text-body;
+        color: $blanco;
+        width: 500px;
+        @media screen and (max-width:$md) {
+            width: 450px;
+            font-size: 1em;
+          }
+          @media screen and (max-width:$sm) {
+            width: 400px;
+            
+          }
+    }
+}
+
+/* seis consejos para conseguir tiquetes de avion baratos*/
+
+.consejos {
+
+    margin-top: 400px;
+    @media screen and (max-width:$lg) {
+        margin-top: 300px;
+      }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+
+        &--h2 {
+            font-family: $font-titulo;
+            font-size: $text-h2;
+            text-align: center;
+            @media screen and (max-width:$lg) {
+                width: 80%;
+              }
+              @media screen and (max-width:$md) {
+                font-size: $text-h3;
+              }
+        }
+    }
+
+    &__box {
+        display: flex;
+        margin-top: 2em;
+        width: 80%;
+        gap: 20px;
+        @media screen and (max-width:$lg) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+    }
+
+    &__text {
+        &--h3 {
+            font-family: $font-titulo;
+            color: $tercero;
+            font-size: $text-h3;
+            @media screen and (max-width:$lg) {
+                text-align: center;
+              }
+              @media screen and (max-width:$md) {
+                font-size: $text-h4;
+              }
+        }
+
+        &--p {
+            font-family: $font-texto;
+            font-size: $text-body;
+            @media screen and (max-width:$lg) {
+                text-align: center;
+              }
+              @media screen and (max-width:$md) {
+                font-size: 1em;
+              }
+        }
+    }
+
+    &__img{
+        &--img{
+            @media screen and (max-width:$xl) {
+                width: 400px;
+                height: 500px;
+                object-fit: cover;
+              }
+              @media screen and (max-width:$lg) {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+              }
+        }
+    }
+}
+
+/* cards */
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 8.4em;
+    @media screen and (max-width:$lg) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+        width: 80%;
+        @media screen and (max-width:$lg) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+    }
+
+    &__b1{
+        @include cards;
+
+        &--h3{
+            @include cardsh3;
+            padding-bottom: 50px;
+        }
+
+        &--linea{
+            @include cardslinea;
+            
+        }
+        &--p{
+            @include cardsp;
+        }
+
+        
+    }
+
+    &__b2{
+        @include cards;
+
+        &--h3{
+            @include cardsh3;
+        }
+
+        &--linea{
+            @include cardslinea;
+        }
+        &--p{
+            @include cardsp;
+        }
+
+        
+    }
+
+    &__b3{
+        @include cards;
+
+        &--h3{
+            @include cardsh3;
+            padding-bottom: 50px;
+        }
+
+        &--linea{
+            @include cardslinea;
+        }
+        &--p{
+            @include cardsp;
+        }
+
+        
+    }
+
+    &__b4{
+        @include cards;
+
+        &--h3{
+            @include cardsh3;
+        }
+
+        &--linea{
+            @include cardslinea;
+        }
+        &--p{
+            @include cardsp;
+        }
+
+        
+    }
+
+    &__b5{
+        @include cards;
+
+        &--h3{
+            @include cardsh3;
+        }
+
+        &--linea{
+            @include cardslinea;
+        }
+        &--p{
+            @include cardsp;
+        }
+
+        
+    }
+    &__b6{
+        @include cards;
+
+        &--h3{
+            @include cardsh3;
+            padding-bottom: 50px;
+            
+        }
+
+        &--linea{
+            @include cardslinea;
+        }
+        &--p{
+            @include cardsp;
+        }
+
+        
+    }
+    
+}

@@ -1,11 +1,47 @@
 // estilos index
 
-/* header */
-.header {
-  @include header(url("/img/home.png"), 704px);
+
+.textppal__texti {
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+
+
+
+  &--h1 {
+    font-family: $font-titulo;
+    font-size: $text-h1;
+    color: $primero;
+    @media screen and (max-width:$md) {
+      font-size: $text-h2;
+      margin-top: -30px;
+    }
+    @media screen and (max-width:$sm) {
+      margin-top: -45px;
+    }
+  }
+
+  &--p {
+    font-size: $text-body;
+    color: $blanco;
+    width: 800px;
+    @media screen and (max-width:$md) {
+      width: 650px;
+      font-size: 1em;
+    }
+    @media screen and (max-width:$sm) {
+      width: 450px;
+      
+    }
+  }
 }
 
+
 .btn {
+  border-radius: 0px;
   color: $primero;
   font-family: $font-titulo;
   font-size: $text-btn;
@@ -19,43 +55,93 @@
   border: solid$primero;
 }
 
+
 .galeria__box {
   display: flex;
-  margin-top: -265px;
+  justify-content: center;
+  margin-top: 172px;
+
+  @media screen and (max-width:$md) {
+    display: none;
+  }
+
+  &--img1 {
+    @media screen and (max-width:$lg) {
+      display: none;
+    }
+  }
+
 }
 
 /* por qué visitar colombia */
 
+
 .visit {
   margin-top: 8.4em;
+  @media screen and (max-width:$md) {
+    margin-top: 13em;
+  }
 
-  &__slider {
+  &__article {
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  &__box {
     width: 80%;
-    height: 650px;
-    position: relative;
-    margin-top: 2.5em;
-    margin-left: 10.6em;
-    margin-right: 10.6em;
+    height: 600px;
+
     &--h2 {
+      margin-bottom: 50px;
       text-align: center;
       font-family: $font-titulo;
       font-size: $text-h2;
+      @media screen and (max-width:$md) {
+        font-size: $text-h3;
+      }
+    }
+
+    @media screen and (max-width:$xl) {
+      width: 90%;
+      height: 530px;
+    }
+
+    @media screen and (max-width:$lg) {
+      height: 625px;
+    }
+    @media screen and (max-width:$md) {
+      height: 770px;
     }
   }
 
-  &__slider1 {
+  &__box1 {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     gap: 20px;
-    position: absolute;
-    left: 0px;
-    top: 100px;
-    opacity: 1;
-    background-color: $blanco;
-    transition: opacity 0.5s;
+    @media screen and (max-width:$md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-    &:target {
-      opacity: 1;
+    &--img {
+      @media screen and (max-width:$xl) {
+        height: 450px;
+      }
+
+      @media screen and (max-width:$lg) {
+        width: 47.5%;
+        height: 535px;
+        object-fit: cover;
+      }
+      @media screen and (max-width:$md) {
+        width: 90%;
+        height: 400px;
+        object-fit: cover;
+      }
+
     }
   }
 
@@ -69,78 +155,40 @@
     }
   }
 
-  &__slider2 {
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    gap: 20px;
-    left: 0px;
-    top: 100px;
-    opacity: 0;
-    background-color: $blanco;
-    transition: opacity 0.5s;
-
-    &:target {
-      opacity: 1;
-    }
-  }
-
-  &__slider3 {
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    gap: 20px;
-    left: 0px;
-    top: 100px;
-    opacity: 0;
-    background-color: $blanco;
-    transition: opacity 0.5s;
-
-    &:target {
-      opacity: 1;
-    }
-  }
-
-  &__menu {
-    display: flex;
-    justify-content: center;
-
-    &--uno {
-      text-align: center;
-      padding: 15px;
-
-      a {
-        display: inline-block;
-        color: $primero;
-        text-decoration: none;
-        border: 2px solid$primero;
-        width: 50px;
-        height: 50px;
-        padding: 5px;
-        font-family: $font-titulo;
-        font-size: $text-btn;
-        border-radius: 100%;
-
-        &:hover {
-          background-color: $primero;
-          color: $blanco;
-        }
-      }
-    }
-  }
 }
 
 /* servios */
 
 .servicios {
-  margin-top: 7em;
+  margin-top: 11em;
+
+  &__article {
+    display: flex;
+    justify-content: center;
+
+  }
 
   &__caja {
     display: flex;
     justify-content: center;
     width: 80%;
-    margin-left: 10.6em;
-    margin-right: 10.6em;
+
+    @media screen and (max-width:$xl) {
+      width: 90%;
+    }
+
+    @media screen and (max-width:$lg) {
+      display: flex;
+      justify-content: center;
+      width: 95%;
+    }
+
+    @media screen and (max-width:$md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
 
     &--box1 {
       width: 26.6%;
@@ -150,6 +198,13 @@
       align-items: center;
       text-align: center;
       padding: 30px;
+
+      @media screen and (max-width:$lg) {
+        width: 31.6%;
+      }
+      @media screen and (max-width:$md) {
+        width: 80%;
+      }
 
       h2 {
         @include boxh2;
@@ -169,6 +224,13 @@
       text-align: center;
       padding: 30px;
 
+      @media screen and (max-width:$lg) {
+        width: 31.6%;
+      }
+      @media screen and (max-width:$md) {
+        width: 80%;
+      }
+
       h2 {
         @include boxh2;
       }
@@ -186,6 +248,13 @@
       align-items: center;
       text-align: center;
       padding: 30px;
+
+      @media screen and (max-width:$lg) {
+        width: 31.6%;
+      }
+      @media screen and (max-width:$md) {
+        width: 80%;
+      }
 
       h2 {
         @include boxh2;

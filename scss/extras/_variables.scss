@@ -18,11 +18,20 @@ $font-titulo: 'Yanone Kaffeesatz', sans-serif;
 $text-body: 1.1em;
 $text-h1: 5em;
 $text-h2: 3.6em;
-$text-h3: 3em;
-$text-h4: 2.5em;
+$text-h3: 2.6em;
+$text-h4: 2em;
 $text-btn: 1.5em;
 
 /* margenes del sitio */
 $margin-left: 10.6em;
 $margin-right: 10.6em;
+
+/* media queries */
+
+$sm: 540px;
+$md: 720px;
+$lg: 960px;
+$xl: 1140px;
+$xxl: 1320px;
+$xxxl:1880px;
 

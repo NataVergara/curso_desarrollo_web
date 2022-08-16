@@ -1,0 +1,410 @@
+/* header */
+
+.textppal__textt {
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  &--h1 {
+    font-family: $font-titulo;
+    font-size: $text-h1;
+    color: $segundo;
+    @media screen and (max-width:$md) {
+      font-size: $text-h2;
+      margin-top: -30px;
+    }
+    @media screen and (max-width:$sm) {
+      margin-top: -45px;
+    }
+  }
+
+  &--p {
+    font-size: $text-body;
+    color: $blanco;
+    width: 800px;
+    @media screen and (max-width:$md) {
+      width: 650px;
+      font-size: 1em;
+    }
+    @media screen and (max-width:$sm) {
+      width: 450px;
+      
+    }
+  }
+}
+
+/* seccion sobrepuesta */
+
+.boxppal {
+  &__caja {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin-top: 120px;
+    margin-left: 10.6em;
+    margin-right: 10.6em;
+    @media screen and (max-width:$lg){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    @media screen and (max-width:$md){
+      margin-top: 70px;
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    @media screen and (max-width:$sm) {
+      margin-top: 100px;
+    }
+  }
+
+  &__text {
+    background-color: $segundo;
+
+    &--p {
+      padding: 60px;
+      padding-top: 85px;
+      font-size: $text-body;
+      @media screen and (max-width:$xxl){
+        padding:45px ;
+        
+      }
+      @media screen and (max-width:$xl){
+        padding:25px ;
+        
+      }
+      @media screen and (max-width:$md) {
+        font-size: 1em;
+      }
+      
+
+    }
+  }
+
+  &__img{
+    &--img{
+      @media screen and (max-width:$xxl){
+        width: 500px;
+        height: 530px;
+        object-fit: cover;
+        
+      }
+      @media screen and (max-width:$xl){
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+        
+      }
+      @media screen and (max-width:$lg){
+        width: 620px;
+        height: 300px;
+        object-fit: cover;
+        
+      }
+      @media screen and (max-width:$md){
+        width: 604.8px;
+        height: 300px;
+        object-fit: cover;
+      }
+      @media screen and (max-width:$sm){
+        width: 453.6px;
+        height: 300px;
+        object-fit: cover;
+        
+      }
+    }
+  }
+}
+
+/* como encontrar hoteles baratos */
+
+.hotelesb {
+  margin-top: 8.4em;
+
+
+  &__caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--h2 {
+      font-family: $font-titulo;
+      font-size: $text-h2;
+      margin-bottom: 20px;
+      text-align: center;
+      @media screen and (max-width:$md) {
+        font-size: $text-h3;
+      }
+    }
+
+    &--p {
+      width: 80%;
+      text-align: center;
+      font-family: $font-texto;
+      font-size: $text-body;
+      @media screen and (max-width:$md) {
+        font-size: 1em;
+      }
+    }
+
+
+  }
+
+  &__img {
+
+    &--img {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  &__item1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    &--b1 {
+
+      font-family: $font-titulo;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 70px;
+      background-color: $background;
+      padding: 15px;
+
+      @media screen and (max-width:$lg){
+        font-size: 1.5em;
+        height: 60px;
+        
+      }
+      @media screen and (max-width:$md){
+        height: 80px;
+        
+      }
+      
+
+    }
+  }
+
+  &__item2 {
+    display: flex;
+    justify-content: center;
+
+    &--b2 {
+      font-family: $font-titulo;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 70px;
+      background-color: $blanco;
+      padding: 15px;
+      @media screen and (max-width:$lg){
+        font-size: 1.5em;
+        height: 60px;
+        padding: 6px;
+        
+      }
+      @media screen and (max-width:$sm){
+        height: 70px;
+        
+      }
+
+    }
+  }
+
+  &__item3 {
+    display: flex;
+    justify-content: center;
+
+    &--b3 {
+      font-family: $font-titulo;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 100px;
+      background-color: $background;
+      padding: 15px;
+      @media screen and (max-width:$lg){
+        font-size: 1.5em;
+        height: 80px;
+        padding: 10px;
+        
+      }
+      @media screen and (max-width:$md){
+        height: 120px;
+        padding: 15px;
+        
+      }
+      @media screen and (max-width:$sm){
+        height: 140px;
+        
+      }
+
+    }
+  }
+
+  &__item4 {
+    display: flex;
+    justify-content: center;
+
+    &--b4 {
+      font-family: $font-titulo;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 70px;
+      background-color: $blanco;
+      padding: 15px;
+      @media screen and (max-width:$lg){
+        font-size: 1.5em;
+        height: 50px;
+        padding: 6px;
+        
+      }
+      @media screen and (max-width:$md){
+        height: 60px;
+        padding: 0px;
+        
+      }
+
+    }
+  }
+
+  &__item5 {
+    display: flex;
+    justify-content: center;
+
+    &--b5 {
+      font-family: $font-titulo;
+      font-size: 1.8em;
+      text-align: center;
+      width: 80%;
+      height: 70px;
+      background-color: $background;
+      padding: 15px;
+      @media screen and (max-width:$lg){
+        font-size: 1.5em;
+        height: 60px;
+        
+      }
+      @media screen and (max-width:$sm){
+        height: 80px;
+        
+      }
+
+    }
+  }
+
+  &__texto {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    &--p {
+      width: 80%;
+      font-family: $font-texto;
+      font-size: $text-body;
+      text-align: center;
+      @media screen and (max-width:$md) {
+        font-size: 1em;
+      }
+
+    }
+
+  }
+}
+
+/* los mejores portales */
+
+.portales {
+  margin-top: 8.4em;
+  @media screen and (max-width:$sm) {
+    margin-top: 6.4em;
+  }
+
+  &__caja {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    @media screen and (max-width:$lg){
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      
+    }
+
+  }
+
+  &__texto {
+    width: 35%;
+    font-family: $font-texto;
+    font-size: $text-body;
+    @media screen and (max-width:$lg){
+      width: 60%;
+      text-align: center;
+      
+    }
+    @media screen and (max-width:$md) {
+      width: 80%;
+      font-size: 1em;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__titulo {
+    &--h2 {
+      font-size: $text-h2;
+      font-family: $font-titulo;
+      @media screen and (max-width:$lg){
+        text-align: center;
+        
+      }
+      @media screen and (max-width:$md) {
+        font-size: $text-h3;
+      }
+    }
+
+  }
+
+  &__lista {
+    &--ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      text-align: center;
+      padding: 0;
+      margin-top: 20px;
+
+
+
+      li {
+        font-family: $font-titulo;
+        font-size: $text-btn;
+        background-color: $segundo;
+        width: 150px;
+        height: 80px;
+        padding-top: 20px;
+
+        a {
+          color: $quinto;
+
+          &:hover {
+            font-weight: 700;
+          }
+
+        }
+
+
+      }
+    }
+  }
+}

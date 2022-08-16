@@ -1,0 +1,95 @@
+.textppal__textc {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    &--h1 {
+        font-family: $font-titulo;
+        font-size: $text-h1;
+        color: $quinto;
+        width: 300px;
+        @media screen and (max-width:$md) {
+            font-size: $text-h2;
+            margin-top: -30px;
+          }
+          @media screen and (max-width:$sm) {
+            margin-top: -45px;
+          }
+
+    }
+}
+
+/* formulario */
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        @media screen and (max-width:$xl) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+    }
+
+    &__form {
+        width: 40%;
+        background-color: $quinto;
+        padding: 50px;
+        @media screen and (max-width:$xl) {
+            width: 630px;
+          }
+          @media screen and (max-width:$sm) {
+            width: 100%;
+          }  
+
+        &--p {
+            color: $blanco;
+            font-size: $text-body;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__img{
+        &--img{
+            @media screen and (max-width:$xl) {
+                display: none;
+              }
+        }
+    }
+
+    textarea:focus,
+    input:focus,
+    input[type]:focus {
+
+        border-color: $tercero;
+
+        box-shadow: 0 1px 1px $tercero inset, 0 0 8px $tercero;
+
+        outline: 0 none;
+
+    }
+
+    .form-control {
+        border-radius: 0px;
+    }
+
+    .btn {
+        margin-top: 40px;
+        border-radius: 0px;
+        border: 1px solid$blanco;
+        color: $blanco;
+
+        &:hover {
+            background-color: $blanco;
+            color: $quinto;
+        }
+    }
+}
