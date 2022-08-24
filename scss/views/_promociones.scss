@@ -47,6 +47,30 @@
 
 .promos{
     margin-top: 260px;
+
+    @media screen and (max-width:$xxxl) {
+        margin-top: 400px;
+      }
+
+    @media screen and (max-width:$xxl) {
+        margin-top: 400px;
+      }
+
+    @media screen and (max-width:$extra) {
+        margin-top: 400px;
+      }
+
+    @media screen and (max-width:$xl) {
+        margin-top: 400px;
+      }
+
+    @media screen and (max-width:$extramd) {
+        margin-top: 400px;
+      }
+
+    @media screen and (max-width:$lg) {
+        margin-top: 350px;
+      }
     @media screen and (max-width:$md) {
         margin-top: 200px;
       }

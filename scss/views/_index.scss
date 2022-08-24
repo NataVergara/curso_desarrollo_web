@@ -102,16 +102,17 @@
       }
     }
 
+    
     @media screen and (max-width:$xl) {
       width: 90%;
-      height: 530px;
+      height: 310px;
     }
 
     @media screen and (max-width:$lg) {
-      height: 625px;
+      height: 400px;
     }
     @media screen and (max-width:$md) {
-      height: 770px;
+      height: 530px;
     }
   }
 
@@ -162,6 +163,13 @@
 .servicios {
   margin-top: 11em;
 
+  @media screen and (max-width:$extra) {
+    margin-top: 20em;
+  }
+  @media screen and (max-width:$xl) {
+    margin-top: 25em;
+  }
+
   &__article {
     display: flex;
     justify-content: center;
@@ -198,6 +206,7 @@
       align-items: center;
       text-align: center;
       padding: 30px;
+      
 
       @media screen and (max-width:$lg) {
         width: 31.6%;

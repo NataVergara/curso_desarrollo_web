@@ -52,10 +52,39 @@
   height: 400px;
   background-color: $tercero;
   padding: 50px;
-  @media screen and (max-width:$sm) {
+
+  @media screen and (max-width:$xxl) {
+    height: 450px;
+  } 
+
+  @media screen and (max-width:$extra) {
     height: 500px;
+  } 
+
+  @media screen and (max-width:$xl) {
+    height: 550px;
+  } 
+
+  @media screen and (max-width:$extramd) {
+    height: 650px;
+  } 
+
+  @media screen and (max-width:$lg) {
+    height: 350px;
     
   }
+
+  @media screen and (max-width:$md) {
+    height: 350px;
+    
+  }
+
+  @media screen and (max-width:$sm) {
+    height: 550px;
+    
+  }
+
+  
 }
 
 @mixin cardsh3 {

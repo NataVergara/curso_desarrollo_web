@@ -358,13 +358,13 @@ a {
     @media screen and (max-width: 1140px) {
       .visit__box {
         width: 90%;
-        height: 530px; } }
+        height: 310px; } }
     @media screen and (max-width: 960px) {
       .visit__box {
-        height: 625px; } }
+        height: 400px; } }
     @media screen and (max-width: 720px) {
       .visit__box {
-        height: 770px; } }
+        height: 530px; } }
   .visit__box1 {
     display: flex;
     flex-direction: row-reverse;
@@ -408,6 +408,12 @@ a {
 /* servios */
 .servicios {
   margin-top: 11em; }
+  @media screen and (max-width: 1244px) {
+    .servicios {
+      margin-top: 20em; } }
+  @media screen and (max-width: 1140px) {
+    .servicios {
+      margin-top: 25em; } }
   .servicios__article {
     display: flex;
     justify-content: center; }
@@ -532,6 +538,11 @@ a {
   margin-top: 120px;
   margin-left: 10.6em;
   margin-right: 10.6em; }
+  @media screen and (max-width: 1000px) {
+    .boxppal__caja {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   @media screen and (max-width: 960px) {
     .boxppal__caja {
       display: flex;
@@ -549,18 +560,15 @@ a {
 .boxppal__text {
   background-color: #EFD199; }
   .boxppal__text--p {
-    padding: 60px;
-    padding-top: 85px;
+    padding: 10%;
+    padding-top: 50px;
     font-size: 1.1em; }
-    @media screen and (max-width: 1320px) {
+    @media screen and (max-width: 1244px) {
       .boxppal__text--p {
-        padding: 45px; } }
+        padding: 8%; } }
     @media screen and (max-width: 1140px) {
       .boxppal__text--p {
-        padding: 25px; } }
-    @media screen and (max-width: 720px) {
-      .boxppal__text--p {
-        font-size: 1em; } }
+        padding: 5%; } }
 
 @media screen and (max-width: 1320px) {
   .boxppal__img--img {
@@ -568,9 +576,21 @@ a {
     height: 530px;
     object-fit: cover; } }
 
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 1244px) {
+  .boxppal__img--img {
+    width: 420px;
+    height: 555px;
+    object-fit: cover; } }
+
+@media screen and (min-width: 1140px) {
   .boxppal__img--img {
     width: 350px;
+    height: 498.8px;
+    object-fit: cover; } }
+
+@media screen and (max-width: 1000px) {
+  .boxppal__img--img {
+    width: 660.8px;
     height: 500px;
     object-fit: cover; } }
 
@@ -733,6 +753,9 @@ a {
 /* los mejores portales */
 .portales {
   margin-top: 8.4em; }
+  @media screen and (max-width: 720px) {
+    .portales {
+      margin-top: 5.4em; } }
   @media screen and (max-width: 540px) {
     .portales {
       margin-top: 6.4em; } }
@@ -830,6 +853,9 @@ a {
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 3.6em;
       text-align: center; }
+      @media screen and (max-width: 1000px) {
+        .consejos__article--h2 {
+          width: 80%; } }
       @media screen and (max-width: 960px) {
         .consejos__article--h2 {
           width: 80%; } }
@@ -865,9 +891,19 @@ a {
     @media screen and (max-width: 720px) {
       .consejos__text--p {
         font-size: 1em; } }
+  @media screen and (max-width: 1320px) {
+    .consejos__img--img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover; } }
   @media screen and (max-width: 1140px) {
     .consejos__img--img {
       width: 400px;
+      height: 500px;
+      object-fit: cover; } }
+  @media screen and (max-width: 1000px) {
+    .consejos__img--img {
+      width: 300px;
       height: 500px;
       object-fit: cover; } }
   @media screen and (max-width: 960px) {
@@ -900,9 +936,27 @@ a {
     height: 400px;
     background-color: #80C8BC;
     padding: 50px; }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 1320px) {
+      .cards__b1 {
+        height: 450px; } }
+    @media screen and (max-width: 1244px) {
       .cards__b1 {
         height: 500px; } }
+    @media screen and (max-width: 1140px) {
+      .cards__b1 {
+        height: 550px; } }
+    @media screen and (max-width: 1000px) {
+      .cards__b1 {
+        height: 650px; } }
+    @media screen and (max-width: 960px) {
+      .cards__b1 {
+        height: 350px; } }
+    @media screen and (max-width: 720px) {
+      .cards__b1 {
+        height: 350px; } }
+    @media screen and (max-width: 540px) {
+      .cards__b1 {
+        height: 550px; } }
     .cards__b1--h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 2.6em;
@@ -927,9 +981,27 @@ a {
     height: 400px;
     background-color: #80C8BC;
     padding: 50px; }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 1320px) {
+      .cards__b2 {
+        height: 450px; } }
+    @media screen and (max-width: 1244px) {
       .cards__b2 {
         height: 500px; } }
+    @media screen and (max-width: 1140px) {
+      .cards__b2 {
+        height: 550px; } }
+    @media screen and (max-width: 1000px) {
+      .cards__b2 {
+        height: 650px; } }
+    @media screen and (max-width: 960px) {
+      .cards__b2 {
+        height: 350px; } }
+    @media screen and (max-width: 720px) {
+      .cards__b2 {
+        height: 350px; } }
+    @media screen and (max-width: 540px) {
+      .cards__b2 {
+        height: 550px; } }
     .cards__b2--h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 2.6em;
@@ -953,14 +1025,32 @@ a {
     height: 400px;
     background-color: #80C8BC;
     padding: 50px; }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 1320px) {
+      .cards__b3 {
+        height: 450px; } }
+    @media screen and (max-width: 1244px) {
       .cards__b3 {
         height: 500px; } }
+    @media screen and (max-width: 1140px) {
+      .cards__b3 {
+        height: 550px; } }
+    @media screen and (max-width: 1000px) {
+      .cards__b3 {
+        height: 650px; } }
+    @media screen and (max-width: 960px) {
+      .cards__b3 {
+        height: 350px; } }
+    @media screen and (max-width: 720px) {
+      .cards__b3 {
+        height: 350px; } }
+    @media screen and (max-width: 540px) {
+      .cards__b3 {
+        height: 550px; } }
     .cards__b3--h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 2.6em;
       color: #FFFFFF;
-      padding-bottom: 50px; }
+      padding-bottom: 6px; }
       @media screen and (max-width: 720px) {
         .cards__b3--h3 {
           font-size: 2em; } }
@@ -980,9 +1070,27 @@ a {
     height: 400px;
     background-color: #80C8BC;
     padding: 50px; }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 1320px) {
+      .cards__b4 {
+        height: 450px; } }
+    @media screen and (max-width: 1244px) {
       .cards__b4 {
         height: 500px; } }
+    @media screen and (max-width: 1140px) {
+      .cards__b4 {
+        height: 550px; } }
+    @media screen and (max-width: 1000px) {
+      .cards__b4 {
+        height: 650px; } }
+    @media screen and (max-width: 960px) {
+      .cards__b4 {
+        height: 350px; } }
+    @media screen and (max-width: 720px) {
+      .cards__b4 {
+        height: 350px; } }
+    @media screen and (max-width: 540px) {
+      .cards__b4 {
+        height: 550px; } }
     .cards__b4--h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 2.6em;
@@ -1006,9 +1114,27 @@ a {
     height: 400px;
     background-color: #80C8BC;
     padding: 50px; }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 1320px) {
+      .cards__b5 {
+        height: 450px; } }
+    @media screen and (max-width: 1244px) {
       .cards__b5 {
         height: 500px; } }
+    @media screen and (max-width: 1140px) {
+      .cards__b5 {
+        height: 550px; } }
+    @media screen and (max-width: 1000px) {
+      .cards__b5 {
+        height: 650px; } }
+    @media screen and (max-width: 960px) {
+      .cards__b5 {
+        height: 350px; } }
+    @media screen and (max-width: 720px) {
+      .cards__b5 {
+        height: 350px; } }
+    @media screen and (max-width: 540px) {
+      .cards__b5 {
+        height: 550px; } }
     .cards__b5--h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 2.6em;
@@ -1032,9 +1158,27 @@ a {
     height: 400px;
     background-color: #80C8BC;
     padding: 50px; }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 1320px) {
+      .cards__b6 {
+        height: 450px; } }
+    @media screen and (max-width: 1244px) {
       .cards__b6 {
         height: 500px; } }
+    @media screen and (max-width: 1140px) {
+      .cards__b6 {
+        height: 550px; } }
+    @media screen and (max-width: 1000px) {
+      .cards__b6 {
+        height: 650px; } }
+    @media screen and (max-width: 960px) {
+      .cards__b6 {
+        height: 350px; } }
+    @media screen and (max-width: 720px) {
+      .cards__b6 {
+        height: 350px; } }
+    @media screen and (max-width: 540px) {
+      .cards__b6 {
+        height: 550px; } }
     .cards__b6--h3 {
       font-family: "Yanone Kaffeesatz", sans-serif;
       font-size: 2.6em;
@@ -1092,6 +1236,24 @@ a {
 /* aerolineas */
 .promos {
   margin-top: 260px; }
+  @media screen and (max-width: 1880px) {
+    .promos {
+      margin-top: 400px; } }
+  @media screen and (max-width: 1320px) {
+    .promos {
+      margin-top: 400px; } }
+  @media screen and (max-width: 1244px) {
+    .promos {
+      margin-top: 400px; } }
+  @media screen and (max-width: 1140px) {
+    .promos {
+      margin-top: 400px; } }
+  @media screen and (max-width: 1000px) {
+    .promos {
+      margin-top: 400px; } }
+  @media screen and (max-width: 960px) {
+    .promos {
+      margin-top: 350px; } }
   @media screen and (max-width: 720px) {
     .promos {
       margin-top: 200px; } }
